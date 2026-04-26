@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telemedicine Login | Secure Access</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #0072ff;
+      --secondary: #00c6ff;
+      --accent: #ff4757;
+      --glass: rgba(255, 255, 255, 0.12);
+      --glass-border: rgba(255, 255, 255, 0.2);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      width: 100%;
+      background: #0a0a0a url("assets/bg.png") no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Animated Overlay */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(circle at center, rgba(0, 114, 255, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%);
+      z-index: 0;
+    }
+
+    .login-container {
+      position: relative;
+      z-index: 10;
+      width: 400px;
+      padding: 50px 40px;
+      backdrop-filter: blur(25px) saturate(180%);
+      -webkit-backdrop-filter: blur(25px) saturate(180%);
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: 24px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .brand {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .brand h1 {
+      font-size: 32px;
+      font-weight: 800;
+      background: linear-gradient(135deg, #fff 0%, #a5d8ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -1px;
+    }
+
+    .brand p {
+      color: rgba(255,255,255,0.6);
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 8px;
+      color: rgba(255,255,255,0.8);
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .input-group input,
+    .input-group select {
+      width: 100%;
+      padding: 14px 18px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      color: #fff;
+      font-size: 15px;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .input-group input:focus,
+    .input-group select:focus {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: var(--secondary);
+      box-shadow: 0 0 0 4px rgba(0, 198, 255, 0.15);
+    }
+
+    .input-group select option {
+      background: #1a1a1a;
+      color: #fff;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      margin-top: 30px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      border: none;
+      border-radius: 12px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0, 114, 255, 0.3);
+    }
+
+    button:active {
+      transform: translateY(0);
+    }
+
+    #btn-text.loading {
+      display: none;
+    }
+
+    .loader {
+      display: none;
+      width: 20px;
+      height: 20px;
+      border: 3px solid rgba(255,255,255,0.3);
+      border-radius: 50%;
+      border-top-color: #fff;
+      animation: spin 1s ease-in-out infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .link {
+      margin-top: 25px;
+      text-align: center;
+      font-size: 14px;
+      color: rgba(255,255,255,0.6);
+    }
+
+    .link a {
+      color: var(--secondary);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .link a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    /* Glass circles for background depth */
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      filter: blur(80px);
+      z-index: 1;
+      opacity: 0.4;
+    }
+
+    .c1 { width: 300px; height: 300px; top: -100px; right: -50px; }
+    .c2 { width: 250px; height: 250px; bottom: -50px; left: -50px; }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="circle c1"></div>
+  <div class="circle c2"></div>
+
+  <div class="login-container">
+    <div class="brand">
+      <h1>TeleCare</h1>
+      <p>Secure Healthcare Portal Login</p>
+    </div>
+
+    <!-- EMAIL -->
+    <div class="input-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="name@example.com" autocomplete="email">
+    </div>
+
+    <!-- PASSWORD -->
+    <div class="input-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="••••••••" autocomplete="current-password">
+    </div>
+
+    <!-- ROLE -->
+    <div class="input-group">
+      <label for="role">Access Level</label>
+      <select id="role">
+        <option value="patient">Patient Access</option>
+        <option value="doctor">Medical Professional</option>
+      </select>
+    </div>
+
+    <!-- LOGIN BUTTON -->
+    <button type="button" onclick="login()" id="login-btn">
+      <span id="btn-text">Sign In</span>
+      <div class="loader" id="btn-loader"></div>
+    </button>
+
+    <div class="link">
+      Need a new account? <a href="register.html">Create one now</a>
+    </div>
+  </div>
+
+  <!-- 🔥 CONNECT JS -->
+  <script src="log.js"></script>
+
+</body>
+</html>

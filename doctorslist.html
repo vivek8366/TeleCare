@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Available Specialists | TeleCare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #00a8c6;
+      --secondary: #0072ff;
+      --bg: #f8fafc;
+      --white: #ffffff;
+      --text-dark: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Outfit', sans-serif; }
+
+    body {
+      background: var(--bg);
+      min-height: 100vh;
+      color: var(--text-dark);
+    }
+
+    /* HEADER */
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h2 {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--secondary);
+    }
+
+    .btn-back {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 14px;
+      padding: 8px 16px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      transition: all 0.2s;
+    }
+
+    .btn-back:hover { background: #f1f5f9; color: var(--primary); }
+
+    .main-wrapper {
+      display: flex;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      width: 280px;
+      background: var(--white);
+      height: calc(100vh - 65px);
+      position: sticky;
+      top: 65px;
+      padding: 30px;
+      border-right: 1px solid var(--border);
+      overflow-y: auto;
+    }
+
+    .sidebar h3 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .spec-list { list-style: none; margin-bottom: 30px; }
+    .spec-item {
+      padding: 12px 15px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-dark);
+      transition: all 0.2s;
+      margin-bottom: 5px;
+    }
+
+    .spec-item:hover { background: #f1f5f9; color: var(--primary); }
+    .spec-item.active { background: var(--secondary); color: white; }
+
+    .filters { border-top: 1px solid var(--border); padding-top: 25px; }
+    .filter-group { margin-top: 15px; }
+    .filter-group label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    /* CONTENT */
+    .content-area {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .page-title {
+      font-size: 24px;
+      font-weight: 800;
+      margin-bottom: 30px;
+      color: #0f172a;
+    }
+
+    .doctor-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 20px;
+    }
+
+    .doctor-card {
+      background: var(--white);
+      padding: 24px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: all 0.3s;
+    }
+
+    .doctor-card:hover {
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      border-color: var(--primary);
+      transform: translateY(-3px);
+    }
+
+    .doc-name { font-size: 18px; font-weight: 700; color: #000; }
+    .doc-spec { font-size: 14px; color: var(--text-muted); margin-top: -8px; }
+    .doc-stats { font-size: 14px; color: #475569; margin-top: 4px; }
+    .doc-price { font-size: 16px; font-weight: 700; color: #10b981; margin-top: 4px; }
+
+    .btn-book {
+      background: #f8fafc;
+      color: var(--secondary);
+      border: 1.5px solid var(--secondary);
+      padding: 12px;
+      border-radius: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .btn-book:hover {
+      background: var(--secondary);
+      color: white;
+      box-shadow: 0 5px 15px rgba(0, 114, 255, 0.2);
+    }
+
+    #loading-spinner { margin: 100px auto; width: 40px; height: 40px; border: 3px solid #e2e8f0; border-radius: 50%; border-top-color: var(--primary); animation: spin 0.8s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .no-doctors { text-align: center; padding: 60px; color: var(--text-muted); font-size: 18px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2 id="header-title">Specialists</h2>
+  <a href="patientdash.html" class="btn-back">← Dashboard</a>
+</header>
+
+<div class="main-wrapper">
+  <div class="sidebar">
+    <h3>Categories</h3>
+    <div id="sidebar-specs" class="spec-list"></div>
+
+    <div class="filters">
+      <h3>Availability</h3>
+      <div class="filter-group">
+        <label><input type="checkbox" id="filter-online" checked> 🟢 Online Consultation</label>
+        <label><input type="checkbox" id="filter-hospital"> 🏥 Hospital Visit</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-area">
+    <h2 id="main-heading" class="page-title">Available Doctors</h2>
+    <div id="doctor-list-container" class="doctor-grid">
+      <div id="loading-spinner"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+let allDoctors = [];
+const specs = [
+  'General Physician', 'Dermatology', 'Obstetrics & Gynecology', 'Orthopaedics',
+  'ENT', 'Neurology', 'Cardiology', 'Urology', 'Gastroenterology', 'Psychiatry',
+  'Pediatrics', 'Pulmonology', 'Endocrinology', 'Nephrology', 'Neurosurgery',
+  'Rheumatology', 'Ophthalmology', 'Surgical Gastroenterology', 'Infectious Disease',
+  'General & Laparoscopic Surgery', 'Psychology', 'Medical Oncology', 'Diabetology', 'Dentist'
+];
+
+function getMockData(email, spec) {
+  let hash = 0;
+  for (let i = 0; i < email.length; i++) { hash = (hash << 5) - hash + email.charCodeAt(i); hash |= 0; }
+  const absHash = Math.abs(hash);
+  const exp = (absHash % 15) + 2; 
+  const price = (absHash % 800) + 500; 
+  const quals = ["MBBS", "MD", "DNB", "FRCS", "MS", "DM"];
+  const qual1 = quals[absHash % quals.length];
+  const qual2 = quals[(absHash + 1) % quals.length];
+  let subQual = spec.includes("General") ? "General" : spec.split(" ")[0];
+  if(subQual.length < 3) subQual = spec;
+  return { exp, price, qual: `${qual1}, ${qual2} (${subQual})` };
+}
+
+async function init() {
+  renderSidebar();
+  const currentSpec = localStorage.getItem("specialization") || "General Physician";
+  
+  try {
+    const res = await fetch("http://localhost:5000/doctors");
+    allDoctors = await res.json();
+    displayDoctors(currentSpec);
+  } catch (err) {
+    document.getElementById("doctor-list-container").innerHTML = '<div class="no-doctors">Error connecting to server.</div>';
+  }
+}
+
+function renderSidebar() {
+  const sidebar = document.getElementById("sidebar-specs");
+  const current = localStorage.getItem("specialization") || "General Physician";
+  
+  sidebar.innerHTML = specs.map(s => `
+    <li class="spec-item ${s === current ? 'active' : ''}" onclick="switchSpec('${s}')">
+      ${s}
+    </li>
+  `).join("");
+}
+
+function switchSpec(spec) {
+  localStorage.setItem("specialization", spec);
+  renderSidebar();
+  displayDoctors(spec);
+}
+
+function displayDoctors(spec) {
+  const container = document.getElementById("doctor-list-container");
+  const headerTitle = document.getElementById("header-title");
+  const mainHeading = document.getElementById("main-heading");
+
+  headerTitle.innerText = spec + " Specialists";
+  mainHeading.innerText = "Consult " + spec + " Doctors";
+
+  // Filter and deduplicate
+  const filtered = allDoctors.filter(d => d.specialization === spec && d.name);
+  const unique = [];
+  const seen = new Set();
+  filtered.forEach(d => { if(!seen.has(d.email)) { seen.add(d.email); unique.push(d); } });
+
+  // Limit to 15
+  const displayList = unique.slice(0, 15);
+
+  if (displayList.length === 0) {
+    container.innerHTML = '<div class="no-doctors">No doctors found in this category.</div>';
+    return;
+  }
+
+  container.innerHTML = displayList.map(doc => {
+    const mock = getMockData(doc.email, spec);
+    return `
+      <div class="doctor-card">
+        <div class="doc-name">${doc.name.startsWith("Dr.") ? doc.name : "Dr. " + doc.name}</div>
+        <div class="doc-spec">${spec}</div>
+        <div class="doc-stats">${mock.exp} Years • ${mock.qual}</div>
+        <div class="doc-price">₹${mock.price}</div>
+        <button class="btn-book" onclick="book('${doc.name}', '${doc.email}')">
+          Book Appointment
+        </button>
+      </div>
+    `;
+  }).join("");
+}
+
+function book(name, email) {
+  localStorage.setItem("doctorName", name);
+  localStorage.setItem("doctorEmail", email);
+  window.location = "book.html";
+}
+
+init();
+</script>
+</body>
+</html>

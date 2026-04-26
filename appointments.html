@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Appointments</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: #f4f7fb;
+    }
+
+    header {
+      background: #00a8c6;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 22px;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 14px;
+      text-align: center;
+    }
+
+    th {
+      background: #00a8c6;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    tr:hover {
+      background: #eaf6f9;
+    }
+
+    /* STATUS */
+    .status {
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .Approved {
+      background: #d4edda;
+      color: #155724;
+    }
+
+    .Rejected {
+      background: #f8d7da;
+      color: #721c24;
+    }
+
+    .Booked {
+      background: #fff3cd;
+      color: #856404;
+    }
+
+    /* BUTTONS */
+    button {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 2px;
+      font-size: 13px;
+    }
+
+    .accept {
+      background: #28a745;
+      color: white;
+    }
+
+    .reject {
+      background: #dc3545;
+      color: white;
+    }
+
+    button:hover {
+      opacity: 0.85;
+    }
+
+    .empty {
+      text-align: center;
+      margin-top: 50px;
+      color: #777;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>Doctor Appointments</header>
+
+<div class="container">
+
+  <table>
+    <thead>
+      <tr>
+        <th>Patient</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Problem</th>
+        <th>Status</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody id="table"></tbody>
+  </table>
+
+  <div id="empty" class="empty" style="display:none;">
+    No appointments found 📭
+  </div>
+
+</div>
+
+<script>
+// 🔐 AUTH CHECK
+if (!localStorage.getItem("token")) {
+  alert("Unauthorized ❌");
+  window.location.href = "login.html";
+}
+
+const email = localStorage.getItem("email");
+
+const baseUrl = "http://localhost:5000";
+fetch(baseUrl + `/appointments?email=${email}&role=doctor`, {
+  headers: {
+    Authorization: "Bearer " + localStorage.getItem("token")
+  }
+})
+.then(res => {
+  if (!res.ok) throw new Error("Unauthorized");
+  return res.json();
+})
+.then(data => {
+  const table = document.getElementById("table");
+  const empty = document.getElementById("empty");
+
+  if (data.length === 0) {
+    empty.style.display = "block";
+    return;
+  }
+
+    data.forEach(app => {
+      table.innerHTML += `
+        <tr>
+          <td>${app.patientEmail}</td>
+        <td>${app.date}</td>
+        <td>${app.time}</td>
+        <td>${app.problem}</td>
+        <td>
+          <span class="status ${app.status}">
+            ${app.status}
+          </span>
+        </td>
+        <td>
+          ${
+            app.status === "Booked"
+            ? `
+              <button class="accept" onclick="update('${app._id}','Approved')">Accept</button>
+              <button class="reject" onclick="update('${app._id}','Rejected')">Reject</button>
+            `
+            : (app.status === "Approved" ? `<button class="accept" style="background:#007bff;" onclick="joinCall('${app.patientEmail}')">Join Call</button>` : "-")
+          }
+        </td>
+      </tr>
+    `;
+  });
+})
+.catch(err => {
+  alert("Error loading appointments ❌");
+});
+
+// UPDATE STATUS
+function update(id, status) {
+  const baseUrl = "http://localhost:5000";
+  fetch(baseUrl + `/appointment/${id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: "Bearer " + localStorage.getItem("token")
+    },
+    body: JSON.stringify({ status })
+  })
+  .then(res => res.json())
+  .then(() => {
+    alert("Updated successfully ✅");
+    location.reload();
+  })
+  .catch(() => alert("Update failed ❌"));
+}
+
+// JOIN CALL
+function joinCall(patientEmail) {
+  localStorage.setItem("targetPatientEmail", patientEmail);
+  localStorage.setItem("doctorName", localStorage.getItem("name") || "Doctor");
+  window.location.href = "consult.html";
+}
+</script>
+
+</body>
+</html>

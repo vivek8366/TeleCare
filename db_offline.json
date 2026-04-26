@@ -1,0 +1,2901 @@
+{
+  "users": [
+    {
+      "name": "patient",
+      "email": "patient1@gmail.com",
+      "password": "$2b$10$vMq7Ah60HJhW.JxpiJbDTeWDyJCeoUfuSzDZiQYF1vX.HxsPmOziK",
+      "role": "patient",
+      "specialization": "",
+      "_id": "1776747116258"
+    },
+    {
+      "name": "Patient Final Test",
+      "email": "final_test_patient@example.com",
+      "password": "$2b$10$yiRHjXThAhgTcUVkLp6YAekaoU/t0EiWZfhvV6csd76ZCnqujfl/6",
+      "role": "patient",
+      "specialization": "",
+      "_id": "1776747608387"
+    },
+    {
+      "name": "Dr. Arjun Sharma",
+      "email": "arjun.sharma.0@telecare.generalphysician.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General Physician",
+      "_id": "seed_0_0_873939"
+    },
+    {
+      "name": "Dr. Priya Gupta",
+      "email": "priya.gupta.1@telecare.generalphysician.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General Physician",
+      "_id": "seed_0_1_873939"
+    },
+    {
+      "name": "Dr. Vikram Reddy",
+      "email": "vikram.reddy.2@telecare.generalphysician.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General Physician",
+      "_id": "seed_0_2_873939"
+    },
+    {
+      "name": "Dr. Sneha Kapoor",
+      "email": "sneha.kapoor.3@telecare.generalphysician.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General Physician",
+      "_id": "seed_0_3_873939"
+    },
+    {
+      "name": "Dr. Rahul Verma",
+      "email": "rahul.verma.4@telecare.generalphysician.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General Physician",
+      "_id": "seed_0_4_873939"
+    },
+    {
+      "name": "Dr. Anjali Rao",
+      "email": "anjali.rao.5@telecare.generalphysician.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General Physician",
+      "_id": "seed_0_5_873939"
+    },
+    {
+      "name": "Dr. Kabir Singh",
+      "email": "kabir.singh.6@telecare.generalphysician.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General Physician",
+      "_id": "seed_0_6_873939"
+    },
+    {
+      "name": "Dr. Ishaan Patel",
+      "email": "ishaan.patel.7@telecare.generalphysician.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General Physician",
+      "_id": "seed_0_7_873939"
+    },
+    {
+      "name": "Dr. Diya Joshi",
+      "email": "diya.joshi.8@telecare.generalphysician.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General Physician",
+      "_id": "seed_0_8_873939"
+    },
+    {
+      "name": "Dr. Rohan Mehta",
+      "email": "rohan.mehta.9@telecare.generalphysician.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General Physician",
+      "_id": "seed_0_9_873939"
+    },
+    {
+      "name": "Dr. Meera Das",
+      "email": "meera.das.10@telecare.generalphysician.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General Physician",
+      "_id": "seed_0_10_873939"
+    },
+    {
+      "name": "Dr. Aryan Malhotra",
+      "email": "aryan.malhotra.11@telecare.generalphysician.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General Physician",
+      "_id": "seed_0_11_873939"
+    },
+    {
+      "name": "Dr. Saanvi Choudhury",
+      "email": "saanvi.choudhury.12@telecare.generalphysician.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General Physician",
+      "_id": "seed_0_12_873939"
+    },
+    {
+      "name": "Dr. Advait Bose",
+      "email": "advait.bose.13@telecare.generalphysician.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General Physician",
+      "_id": "seed_0_13_873939"
+    },
+    {
+      "name": "Dr. Zoya Misra",
+      "email": "zoya.misra.14@telecare.generalphysician.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General Physician",
+      "_id": "seed_0_14_873939"
+    },
+    {
+      "name": "Dr. Priya Reddy",
+      "email": "priya.reddy.0@telecare.dermatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dermatology",
+      "_id": "seed_1_0_873939"
+    },
+    {
+      "name": "Dr. Vikram Kapoor",
+      "email": "vikram.kapoor.1@telecare.dermatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dermatology",
+      "_id": "seed_1_1_873939"
+    },
+    {
+      "name": "Dr. Sneha Verma",
+      "email": "sneha.verma.2@telecare.dermatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dermatology",
+      "_id": "seed_1_2_873939"
+    },
+    {
+      "name": "Dr. Rahul Rao",
+      "email": "rahul.rao.3@telecare.dermatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dermatology",
+      "_id": "seed_1_3_873939"
+    },
+    {
+      "name": "Dr. Anjali Singh",
+      "email": "anjali.singh.4@telecare.dermatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dermatology",
+      "_id": "seed_1_4_873939"
+    },
+    {
+      "name": "Dr. Kabir Patel",
+      "email": "kabir.patel.5@telecare.dermatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dermatology",
+      "_id": "seed_1_5_873939"
+    },
+    {
+      "name": "Dr. Ishaan Joshi",
+      "email": "ishaan.joshi.6@telecare.dermatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dermatology",
+      "_id": "seed_1_6_873939"
+    },
+    {
+      "name": "Dr. Diya Mehta",
+      "email": "diya.mehta.7@telecare.dermatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dermatology",
+      "_id": "seed_1_7_873939"
+    },
+    {
+      "name": "Dr. Rohan Das",
+      "email": "rohan.das.8@telecare.dermatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dermatology",
+      "_id": "seed_1_8_873939"
+    },
+    {
+      "name": "Dr. Meera Malhotra",
+      "email": "meera.malhotra.9@telecare.dermatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dermatology",
+      "_id": "seed_1_9_873939"
+    },
+    {
+      "name": "Dr. Aryan Choudhury",
+      "email": "aryan.choudhury.10@telecare.dermatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dermatology",
+      "_id": "seed_1_10_873939"
+    },
+    {
+      "name": "Dr. Saanvi Bose",
+      "email": "saanvi.bose.11@telecare.dermatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dermatology",
+      "_id": "seed_1_11_873939"
+    },
+    {
+      "name": "Dr. Advait Misra",
+      "email": "advait.misra.12@telecare.dermatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dermatology",
+      "_id": "seed_1_12_873939"
+    },
+    {
+      "name": "Dr. Zoya Gupta",
+      "email": "zoya.gupta.13@telecare.dermatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dermatology",
+      "_id": "seed_1_13_873939"
+    },
+    {
+      "name": "Dr. Karthik Ahuja",
+      "email": "karthik.ahuja.14@telecare.dermatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dermatology",
+      "_id": "seed_1_14_873939"
+    },
+    {
+      "name": "Dr. Vikram Verma",
+      "email": "vikram.verma.0@telecare.obstetricsgynecology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Obstetrics & Gynecology",
+      "_id": "seed_2_0_873939"
+    },
+    {
+      "name": "Dr. Sneha Rao",
+      "email": "sneha.rao.1@telecare.obstetricsgynecology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Obstetrics & Gynecology",
+      "_id": "seed_2_1_873939"
+    },
+    {
+      "name": "Dr. Rahul Singh",
+      "email": "rahul.singh.2@telecare.obstetricsgynecology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Obstetrics & Gynecology",
+      "_id": "seed_2_2_873939"
+    },
+    {
+      "name": "Dr. Anjali Patel",
+      "email": "anjali.patel.3@telecare.obstetricsgynecology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Obstetrics & Gynecology",
+      "_id": "seed_2_3_873939"
+    },
+    {
+      "name": "Dr. Kabir Joshi",
+      "email": "kabir.joshi.4@telecare.obstetricsgynecology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Obstetrics & Gynecology",
+      "_id": "seed_2_4_873939"
+    },
+    {
+      "name": "Dr. Ishaan Mehta",
+      "email": "ishaan.mehta.5@telecare.obstetricsgynecology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Obstetrics & Gynecology",
+      "_id": "seed_2_5_873939"
+    },
+    {
+      "name": "Dr. Diya Das",
+      "email": "diya.das.6@telecare.obstetricsgynecology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Obstetrics & Gynecology",
+      "_id": "seed_2_6_873939"
+    },
+    {
+      "name": "Dr. Rohan Malhotra",
+      "email": "rohan.malhotra.7@telecare.obstetricsgynecology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Obstetrics & Gynecology",
+      "_id": "seed_2_7_873939"
+    },
+    {
+      "name": "Dr. Meera Choudhury",
+      "email": "meera.choudhury.8@telecare.obstetricsgynecology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Obstetrics & Gynecology",
+      "_id": "seed_2_8_873939"
+    },
+    {
+      "name": "Dr. Aryan Bose",
+      "email": "aryan.bose.9@telecare.obstetricsgynecology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Obstetrics & Gynecology",
+      "_id": "seed_2_9_873939"
+    },
+    {
+      "name": "Dr. Saanvi Misra",
+      "email": "saanvi.misra.10@telecare.obstetricsgynecology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Obstetrics & Gynecology",
+      "_id": "seed_2_10_873939"
+    },
+    {
+      "name": "Dr. Advait Gupta",
+      "email": "advait.gupta.11@telecare.obstetricsgynecology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Obstetrics & Gynecology",
+      "_id": "seed_2_11_873939"
+    },
+    {
+      "name": "Dr. Zoya Ahuja",
+      "email": "zoya.ahuja.12@telecare.obstetricsgynecology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Obstetrics & Gynecology",
+      "_id": "seed_2_12_873939"
+    },
+    {
+      "name": "Dr. Karthik Iyer",
+      "email": "karthik.iyer.13@telecare.obstetricsgynecology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Obstetrics & Gynecology",
+      "_id": "seed_2_13_873939"
+    },
+    {
+      "name": "Dr. Nisha Nair",
+      "email": "nisha.nair.14@telecare.obstetricsgynecology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Obstetrics & Gynecology",
+      "_id": "seed_2_14_873939"
+    },
+    {
+      "name": "Dr. Sneha Singh",
+      "email": "sneha.singh.0@telecare.orthopaedics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Orthopaedics",
+      "_id": "seed_3_0_873939"
+    },
+    {
+      "name": "Dr. Rahul Patel",
+      "email": "rahul.patel.1@telecare.orthopaedics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Orthopaedics",
+      "_id": "seed_3_1_873939"
+    },
+    {
+      "name": "Dr. Anjali Joshi",
+      "email": "anjali.joshi.2@telecare.orthopaedics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Orthopaedics",
+      "_id": "seed_3_2_873939"
+    },
+    {
+      "name": "Dr. Kabir Mehta",
+      "email": "kabir.mehta.3@telecare.orthopaedics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Orthopaedics",
+      "_id": "seed_3_3_873939"
+    },
+    {
+      "name": "Dr. Ishaan Das",
+      "email": "ishaan.das.4@telecare.orthopaedics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Orthopaedics",
+      "_id": "seed_3_4_873939"
+    },
+    {
+      "name": "Dr. Diya Malhotra",
+      "email": "diya.malhotra.5@telecare.orthopaedics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Orthopaedics",
+      "_id": "seed_3_5_873939"
+    },
+    {
+      "name": "Dr. Rohan Choudhury",
+      "email": "rohan.choudhury.6@telecare.orthopaedics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Orthopaedics",
+      "_id": "seed_3_6_873939"
+    },
+    {
+      "name": "Dr. Meera Bose",
+      "email": "meera.bose.7@telecare.orthopaedics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Orthopaedics",
+      "_id": "seed_3_7_873939"
+    },
+    {
+      "name": "Dr. Aryan Misra",
+      "email": "aryan.misra.8@telecare.orthopaedics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Orthopaedics",
+      "_id": "seed_3_8_873939"
+    },
+    {
+      "name": "Dr. Saanvi Gupta",
+      "email": "saanvi.gupta.9@telecare.orthopaedics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Orthopaedics",
+      "_id": "seed_3_9_873939"
+    },
+    {
+      "name": "Dr. Advait Ahuja",
+      "email": "advait.ahuja.10@telecare.orthopaedics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Orthopaedics",
+      "_id": "seed_3_10_873939"
+    },
+    {
+      "name": "Dr. Zoya Iyer",
+      "email": "zoya.iyer.11@telecare.orthopaedics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Orthopaedics",
+      "_id": "seed_3_11_873939"
+    },
+    {
+      "name": "Dr. Karthik Nair",
+      "email": "karthik.nair.12@telecare.orthopaedics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Orthopaedics",
+      "_id": "seed_3_12_873939"
+    },
+    {
+      "name": "Dr. Nisha Kulkarni",
+      "email": "nisha.kulkarni.13@telecare.orthopaedics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Orthopaedics",
+      "_id": "seed_3_13_873939"
+    },
+    {
+      "name": "Dr. Sameer Sharma",
+      "email": "sameer.sharma.14@telecare.orthopaedics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Orthopaedics",
+      "_id": "seed_3_14_873939"
+    },
+    {
+      "name": "Dr. Rahul Joshi",
+      "email": "rahul.joshi.0@telecare.ent.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "ENT",
+      "_id": "seed_4_0_873939"
+    },
+    {
+      "name": "Dr. Anjali Mehta",
+      "email": "anjali.mehta.1@telecare.ent.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "ENT",
+      "_id": "seed_4_1_873939"
+    },
+    {
+      "name": "Dr. Kabir Das",
+      "email": "kabir.das.2@telecare.ent.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "ENT",
+      "_id": "seed_4_2_873939"
+    },
+    {
+      "name": "Dr. Ishaan Malhotra",
+      "email": "ishaan.malhotra.3@telecare.ent.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "ENT",
+      "_id": "seed_4_3_873939"
+    },
+    {
+      "name": "Dr. Diya Choudhury",
+      "email": "diya.choudhury.4@telecare.ent.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "ENT",
+      "_id": "seed_4_4_873939"
+    },
+    {
+      "name": "Dr. Rohan Bose",
+      "email": "rohan.bose.5@telecare.ent.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "ENT",
+      "_id": "seed_4_5_873939"
+    },
+    {
+      "name": "Dr. Meera Misra",
+      "email": "meera.misra.6@telecare.ent.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "ENT",
+      "_id": "seed_4_6_873939"
+    },
+    {
+      "name": "Dr. Aryan Gupta",
+      "email": "aryan.gupta.7@telecare.ent.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "ENT",
+      "_id": "seed_4_7_873939"
+    },
+    {
+      "name": "Dr. Saanvi Ahuja",
+      "email": "saanvi.ahuja.8@telecare.ent.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "ENT",
+      "_id": "seed_4_8_873939"
+    },
+    {
+      "name": "Dr. Advait Iyer",
+      "email": "advait.iyer.9@telecare.ent.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "ENT",
+      "_id": "seed_4_9_873939"
+    },
+    {
+      "name": "Dr. Zoya Nair",
+      "email": "zoya.nair.10@telecare.ent.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "ENT",
+      "_id": "seed_4_10_873939"
+    },
+    {
+      "name": "Dr. Karthik Kulkarni",
+      "email": "karthik.kulkarni.11@telecare.ent.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "ENT",
+      "_id": "seed_4_11_873939"
+    },
+    {
+      "name": "Dr. Nisha Sharma",
+      "email": "nisha.sharma.12@telecare.ent.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "ENT",
+      "_id": "seed_4_12_873939"
+    },
+    {
+      "name": "Dr. Sameer Gupta",
+      "email": "sameer.gupta.13@telecare.ent.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "ENT",
+      "_id": "seed_4_13_873939"
+    },
+    {
+      "name": "Dr. Shreya Reddy",
+      "email": "shreya.reddy.14@telecare.ent.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "ENT",
+      "_id": "seed_4_14_873939"
+    },
+    {
+      "name": "Dr. Anjali Das",
+      "email": "anjali.das.0@telecare.neurology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurology",
+      "_id": "seed_5_0_873939"
+    },
+    {
+      "name": "Dr. Kabir Malhotra",
+      "email": "kabir.malhotra.1@telecare.neurology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurology",
+      "_id": "seed_5_1_873939"
+    },
+    {
+      "name": "Dr. Ishaan Choudhury",
+      "email": "ishaan.choudhury.2@telecare.neurology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurology",
+      "_id": "seed_5_2_873939"
+    },
+    {
+      "name": "Dr. Diya Bose",
+      "email": "diya.bose.3@telecare.neurology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurology",
+      "_id": "seed_5_3_873939"
+    },
+    {
+      "name": "Dr. Rohan Misra",
+      "email": "rohan.misra.4@telecare.neurology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurology",
+      "_id": "seed_5_4_873939"
+    },
+    {
+      "name": "Dr. Meera Gupta",
+      "email": "meera.gupta.5@telecare.neurology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurology",
+      "_id": "seed_5_5_873939"
+    },
+    {
+      "name": "Dr. Aryan Ahuja",
+      "email": "aryan.ahuja.6@telecare.neurology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurology",
+      "_id": "seed_5_6_873939"
+    },
+    {
+      "name": "Dr. Saanvi Iyer",
+      "email": "saanvi.iyer.7@telecare.neurology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurology",
+      "_id": "seed_5_7_873939"
+    },
+    {
+      "name": "Dr. Advait Nair",
+      "email": "advait.nair.8@telecare.neurology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurology",
+      "_id": "seed_5_8_873939"
+    },
+    {
+      "name": "Dr. Zoya Kulkarni",
+      "email": "zoya.kulkarni.9@telecare.neurology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurology",
+      "_id": "seed_5_9_873939"
+    },
+    {
+      "name": "Dr. Karthik Sharma",
+      "email": "karthik.sharma.10@telecare.neurology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurology",
+      "_id": "seed_5_10_873939"
+    },
+    {
+      "name": "Dr. Nisha Gupta",
+      "email": "nisha.gupta.11@telecare.neurology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurology",
+      "_id": "seed_5_11_873939"
+    },
+    {
+      "name": "Dr. Sameer Reddy",
+      "email": "sameer.reddy.12@telecare.neurology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurology",
+      "_id": "seed_5_12_873939"
+    },
+    {
+      "name": "Dr. Shreya Kapoor",
+      "email": "shreya.kapoor.13@telecare.neurology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurology",
+      "_id": "seed_5_13_873939"
+    },
+    {
+      "name": "Dr. Dev Verma",
+      "email": "dev.verma.14@telecare.neurology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurology",
+      "_id": "seed_5_14_873939"
+    },
+    {
+      "name": "Dr. Kabir Choudhury",
+      "email": "kabir.choudhury.0@telecare.cardiology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Cardiology",
+      "_id": "seed_6_0_873939"
+    },
+    {
+      "name": "Dr. Ishaan Bose",
+      "email": "ishaan.bose.1@telecare.cardiology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Cardiology",
+      "_id": "seed_6_1_873939"
+    },
+    {
+      "name": "Dr. Diya Misra",
+      "email": "diya.misra.2@telecare.cardiology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Cardiology",
+      "_id": "seed_6_2_873939"
+    },
+    {
+      "name": "Dr. Rohan Gupta",
+      "email": "rohan.gupta.3@telecare.cardiology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Cardiology",
+      "_id": "seed_6_3_873939"
+    },
+    {
+      "name": "Dr. Meera Ahuja",
+      "email": "meera.ahuja.4@telecare.cardiology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Cardiology",
+      "_id": "seed_6_4_873939"
+    },
+    {
+      "name": "Dr. Aryan Iyer",
+      "email": "aryan.iyer.5@telecare.cardiology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Cardiology",
+      "_id": "seed_6_5_873939"
+    },
+    {
+      "name": "Dr. Saanvi Nair",
+      "email": "saanvi.nair.6@telecare.cardiology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Cardiology",
+      "_id": "seed_6_6_873939"
+    },
+    {
+      "name": "Dr. Advait Kulkarni",
+      "email": "advait.kulkarni.7@telecare.cardiology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Cardiology",
+      "_id": "seed_6_7_873939"
+    },
+    {
+      "name": "Dr. Zoya Sharma",
+      "email": "zoya.sharma.8@telecare.cardiology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Cardiology",
+      "_id": "seed_6_8_873939"
+    },
+    {
+      "name": "Dr. Karthik Gupta",
+      "email": "karthik.gupta.9@telecare.cardiology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Cardiology",
+      "_id": "seed_6_9_873939"
+    },
+    {
+      "name": "Dr. Nisha Reddy",
+      "email": "nisha.reddy.10@telecare.cardiology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Cardiology",
+      "_id": "seed_6_10_873939"
+    },
+    {
+      "name": "Dr. Sameer Kapoor",
+      "email": "sameer.kapoor.11@telecare.cardiology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Cardiology",
+      "_id": "seed_6_11_873939"
+    },
+    {
+      "name": "Dr. Shreya Verma",
+      "email": "shreya.verma.12@telecare.cardiology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Cardiology",
+      "_id": "seed_6_12_873939"
+    },
+    {
+      "name": "Dr. Dev Rao",
+      "email": "dev.rao.13@telecare.cardiology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Cardiology",
+      "_id": "seed_6_13_873939"
+    },
+    {
+      "name": "Dr. Arjun Singh",
+      "email": "arjun.singh.14@telecare.cardiology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Cardiology",
+      "_id": "seed_6_14_873939"
+    },
+    {
+      "name": "Dr. Ishaan Misra",
+      "email": "ishaan.misra.0@telecare.urology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Urology",
+      "_id": "seed_7_0_873939"
+    },
+    {
+      "name": "Dr. Diya Gupta",
+      "email": "diya.gupta.1@telecare.urology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Urology",
+      "_id": "seed_7_1_873939"
+    },
+    {
+      "name": "Dr. Rohan Ahuja",
+      "email": "rohan.ahuja.2@telecare.urology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Urology",
+      "_id": "seed_7_2_873939"
+    },
+    {
+      "name": "Dr. Meera Iyer",
+      "email": "meera.iyer.3@telecare.urology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Urology",
+      "_id": "seed_7_3_873939"
+    },
+    {
+      "name": "Dr. Aryan Nair",
+      "email": "aryan.nair.4@telecare.urology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Urology",
+      "_id": "seed_7_4_873939"
+    },
+    {
+      "name": "Dr. Saanvi Kulkarni",
+      "email": "saanvi.kulkarni.5@telecare.urology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Urology",
+      "_id": "seed_7_5_873939"
+    },
+    {
+      "name": "Dr. Advait Sharma",
+      "email": "advait.sharma.6@telecare.urology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Urology",
+      "_id": "seed_7_6_873939"
+    },
+    {
+      "name": "Dr. Zoya Gupta",
+      "email": "zoya.gupta.7@telecare.urology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Urology",
+      "_id": "seed_7_7_873939"
+    },
+    {
+      "name": "Dr. Karthik Reddy",
+      "email": "karthik.reddy.8@telecare.urology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Urology",
+      "_id": "seed_7_8_873939"
+    },
+    {
+      "name": "Dr. Nisha Kapoor",
+      "email": "nisha.kapoor.9@telecare.urology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Urology",
+      "_id": "seed_7_9_873939"
+    },
+    {
+      "name": "Dr. Sameer Verma",
+      "email": "sameer.verma.10@telecare.urology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Urology",
+      "_id": "seed_7_10_873939"
+    },
+    {
+      "name": "Dr. Shreya Rao",
+      "email": "shreya.rao.11@telecare.urology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Urology",
+      "_id": "seed_7_11_873939"
+    },
+    {
+      "name": "Dr. Dev Singh",
+      "email": "dev.singh.12@telecare.urology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Urology",
+      "_id": "seed_7_12_873939"
+    },
+    {
+      "name": "Dr. Arjun Patel",
+      "email": "arjun.patel.13@telecare.urology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Urology",
+      "_id": "seed_7_13_873939"
+    },
+    {
+      "name": "Dr. Priya Joshi",
+      "email": "priya.joshi.14@telecare.urology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Urology",
+      "_id": "seed_7_14_873939"
+    },
+    {
+      "name": "Dr. Diya Ahuja",
+      "email": "diya.ahuja.0@telecare.gastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Gastroenterology",
+      "_id": "seed_8_0_873939"
+    },
+    {
+      "name": "Dr. Rohan Iyer",
+      "email": "rohan.iyer.1@telecare.gastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Gastroenterology",
+      "_id": "seed_8_1_873939"
+    },
+    {
+      "name": "Dr. Meera Nair",
+      "email": "meera.nair.2@telecare.gastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Gastroenterology",
+      "_id": "seed_8_2_873939"
+    },
+    {
+      "name": "Dr. Aryan Kulkarni",
+      "email": "aryan.kulkarni.3@telecare.gastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Gastroenterology",
+      "_id": "seed_8_3_873939"
+    },
+    {
+      "name": "Dr. Saanvi Sharma",
+      "email": "saanvi.sharma.4@telecare.gastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Gastroenterology",
+      "_id": "seed_8_4_873939"
+    },
+    {
+      "name": "Dr. Advait Gupta",
+      "email": "advait.gupta.5@telecare.gastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Gastroenterology",
+      "_id": "seed_8_5_873939"
+    },
+    {
+      "name": "Dr. Zoya Reddy",
+      "email": "zoya.reddy.6@telecare.gastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Gastroenterology",
+      "_id": "seed_8_6_873939"
+    },
+    {
+      "name": "Dr. Karthik Kapoor",
+      "email": "karthik.kapoor.7@telecare.gastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Gastroenterology",
+      "_id": "seed_8_7_873939"
+    },
+    {
+      "name": "Dr. Nisha Verma",
+      "email": "nisha.verma.8@telecare.gastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Gastroenterology",
+      "_id": "seed_8_8_873939"
+    },
+    {
+      "name": "Dr. Sameer Rao",
+      "email": "sameer.rao.9@telecare.gastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Gastroenterology",
+      "_id": "seed_8_9_873939"
+    },
+    {
+      "name": "Dr. Shreya Singh",
+      "email": "shreya.singh.10@telecare.gastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Gastroenterology",
+      "_id": "seed_8_10_873939"
+    },
+    {
+      "name": "Dr. Dev Patel",
+      "email": "dev.patel.11@telecare.gastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Gastroenterology",
+      "_id": "seed_8_11_873939"
+    },
+    {
+      "name": "Dr. Arjun Joshi",
+      "email": "arjun.joshi.12@telecare.gastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Gastroenterology",
+      "_id": "seed_8_12_873939"
+    },
+    {
+      "name": "Dr. Priya Mehta",
+      "email": "priya.mehta.13@telecare.gastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Gastroenterology",
+      "_id": "seed_8_13_873939"
+    },
+    {
+      "name": "Dr. Vikram Das",
+      "email": "vikram.das.14@telecare.gastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Gastroenterology",
+      "_id": "seed_8_14_873939"
+    },
+    {
+      "name": "Dr. Rohan Nair",
+      "email": "rohan.nair.0@telecare.psychiatry.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychiatry",
+      "_id": "seed_9_0_873939"
+    },
+    {
+      "name": "Dr. Meera Kulkarni",
+      "email": "meera.kulkarni.1@telecare.psychiatry.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychiatry",
+      "_id": "seed_9_1_873939"
+    },
+    {
+      "name": "Dr. Aryan Sharma",
+      "email": "aryan.sharma.2@telecare.psychiatry.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychiatry",
+      "_id": "seed_9_2_873939"
+    },
+    {
+      "name": "Dr. Saanvi Gupta",
+      "email": "saanvi.gupta.3@telecare.psychiatry.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychiatry",
+      "_id": "seed_9_3_873939"
+    },
+    {
+      "name": "Dr. Advait Reddy",
+      "email": "advait.reddy.4@telecare.psychiatry.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychiatry",
+      "_id": "seed_9_4_873939"
+    },
+    {
+      "name": "Dr. Zoya Kapoor",
+      "email": "zoya.kapoor.5@telecare.psychiatry.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychiatry",
+      "_id": "seed_9_5_873939"
+    },
+    {
+      "name": "Dr. Karthik Verma",
+      "email": "karthik.verma.6@telecare.psychiatry.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychiatry",
+      "_id": "seed_9_6_873939"
+    },
+    {
+      "name": "Dr. Nisha Rao",
+      "email": "nisha.rao.7@telecare.psychiatry.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychiatry",
+      "_id": "seed_9_7_873939"
+    },
+    {
+      "name": "Dr. Sameer Singh",
+      "email": "sameer.singh.8@telecare.psychiatry.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychiatry",
+      "_id": "seed_9_8_873939"
+    },
+    {
+      "name": "Dr. Shreya Patel",
+      "email": "shreya.patel.9@telecare.psychiatry.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychiatry",
+      "_id": "seed_9_9_873939"
+    },
+    {
+      "name": "Dr. Dev Joshi",
+      "email": "dev.joshi.10@telecare.psychiatry.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychiatry",
+      "_id": "seed_9_10_873939"
+    },
+    {
+      "name": "Dr. Arjun Mehta",
+      "email": "arjun.mehta.11@telecare.psychiatry.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychiatry",
+      "_id": "seed_9_11_873939"
+    },
+    {
+      "name": "Dr. Priya Das",
+      "email": "priya.das.12@telecare.psychiatry.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychiatry",
+      "_id": "seed_9_12_873939"
+    },
+    {
+      "name": "Dr. Vikram Malhotra",
+      "email": "vikram.malhotra.13@telecare.psychiatry.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychiatry",
+      "_id": "seed_9_13_873939"
+    },
+    {
+      "name": "Dr. Sneha Choudhury",
+      "email": "sneha.choudhury.14@telecare.psychiatry.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychiatry",
+      "_id": "seed_9_14_873939"
+    },
+    {
+      "name": "Dr. Meera Sharma",
+      "email": "meera.sharma.0@telecare.pediatrics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pediatrics",
+      "_id": "seed_10_0_873939"
+    },
+    {
+      "name": "Dr. Aryan Gupta",
+      "email": "aryan.gupta.1@telecare.pediatrics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pediatrics",
+      "_id": "seed_10_1_873939"
+    },
+    {
+      "name": "Dr. Saanvi Reddy",
+      "email": "saanvi.reddy.2@telecare.pediatrics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pediatrics",
+      "_id": "seed_10_2_873939"
+    },
+    {
+      "name": "Dr. Advait Kapoor",
+      "email": "advait.kapoor.3@telecare.pediatrics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pediatrics",
+      "_id": "seed_10_3_873939"
+    },
+    {
+      "name": "Dr. Zoya Verma",
+      "email": "zoya.verma.4@telecare.pediatrics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pediatrics",
+      "_id": "seed_10_4_873939"
+    },
+    {
+      "name": "Dr. Karthik Rao",
+      "email": "karthik.rao.5@telecare.pediatrics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pediatrics",
+      "_id": "seed_10_5_873939"
+    },
+    {
+      "name": "Dr. Nisha Singh",
+      "email": "nisha.singh.6@telecare.pediatrics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pediatrics",
+      "_id": "seed_10_6_873939"
+    },
+    {
+      "name": "Dr. Sameer Patel",
+      "email": "sameer.patel.7@telecare.pediatrics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pediatrics",
+      "_id": "seed_10_7_873939"
+    },
+    {
+      "name": "Dr. Shreya Joshi",
+      "email": "shreya.joshi.8@telecare.pediatrics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pediatrics",
+      "_id": "seed_10_8_873939"
+    },
+    {
+      "name": "Dr. Dev Mehta",
+      "email": "dev.mehta.9@telecare.pediatrics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pediatrics",
+      "_id": "seed_10_9_873939"
+    },
+    {
+      "name": "Dr. Arjun Das",
+      "email": "arjun.das.10@telecare.pediatrics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pediatrics",
+      "_id": "seed_10_10_873939"
+    },
+    {
+      "name": "Dr. Priya Malhotra",
+      "email": "priya.malhotra.11@telecare.pediatrics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pediatrics",
+      "_id": "seed_10_11_873939"
+    },
+    {
+      "name": "Dr. Vikram Choudhury",
+      "email": "vikram.choudhury.12@telecare.pediatrics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pediatrics",
+      "_id": "seed_10_12_873939"
+    },
+    {
+      "name": "Dr. Sneha Bose",
+      "email": "sneha.bose.13@telecare.pediatrics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pediatrics",
+      "_id": "seed_10_13_873939"
+    },
+    {
+      "name": "Dr. Rahul Misra",
+      "email": "rahul.misra.14@telecare.pediatrics.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pediatrics",
+      "_id": "seed_10_14_873939"
+    },
+    {
+      "name": "Dr. Aryan Reddy",
+      "email": "aryan.reddy.0@telecare.pulmonology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pulmonology",
+      "_id": "seed_11_0_873939"
+    },
+    {
+      "name": "Dr. Saanvi Kapoor",
+      "email": "saanvi.kapoor.1@telecare.pulmonology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pulmonology",
+      "_id": "seed_11_1_873939"
+    },
+    {
+      "name": "Dr. Advait Verma",
+      "email": "advait.verma.2@telecare.pulmonology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pulmonology",
+      "_id": "seed_11_2_873939"
+    },
+    {
+      "name": "Dr. Zoya Rao",
+      "email": "zoya.rao.3@telecare.pulmonology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pulmonology",
+      "_id": "seed_11_3_873939"
+    },
+    {
+      "name": "Dr. Karthik Singh",
+      "email": "karthik.singh.4@telecare.pulmonology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pulmonology",
+      "_id": "seed_11_4_873939"
+    },
+    {
+      "name": "Dr. Nisha Patel",
+      "email": "nisha.patel.5@telecare.pulmonology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pulmonology",
+      "_id": "seed_11_5_873939"
+    },
+    {
+      "name": "Dr. Sameer Joshi",
+      "email": "sameer.joshi.6@telecare.pulmonology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pulmonology",
+      "_id": "seed_11_6_873939"
+    },
+    {
+      "name": "Dr. Shreya Mehta",
+      "email": "shreya.mehta.7@telecare.pulmonology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pulmonology",
+      "_id": "seed_11_7_873939"
+    },
+    {
+      "name": "Dr. Dev Das",
+      "email": "dev.das.8@telecare.pulmonology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pulmonology",
+      "_id": "seed_11_8_873939"
+    },
+    {
+      "name": "Dr. Arjun Malhotra",
+      "email": "arjun.malhotra.9@telecare.pulmonology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pulmonology",
+      "_id": "seed_11_9_873939"
+    },
+    {
+      "name": "Dr. Priya Choudhury",
+      "email": "priya.choudhury.10@telecare.pulmonology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pulmonology",
+      "_id": "seed_11_10_873939"
+    },
+    {
+      "name": "Dr. Vikram Bose",
+      "email": "vikram.bose.11@telecare.pulmonology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pulmonology",
+      "_id": "seed_11_11_873939"
+    },
+    {
+      "name": "Dr. Sneha Misra",
+      "email": "sneha.misra.12@telecare.pulmonology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pulmonology",
+      "_id": "seed_11_12_873939"
+    },
+    {
+      "name": "Dr. Rahul Gupta",
+      "email": "rahul.gupta.13@telecare.pulmonology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pulmonology",
+      "_id": "seed_11_13_873939"
+    },
+    {
+      "name": "Dr. Anjali Ahuja",
+      "email": "anjali.ahuja.14@telecare.pulmonology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Pulmonology",
+      "_id": "seed_11_14_873939"
+    },
+    {
+      "name": "Dr. Saanvi Verma",
+      "email": "saanvi.verma.0@telecare.endocrinology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Endocrinology",
+      "_id": "seed_12_0_873939"
+    },
+    {
+      "name": "Dr. Advait Rao",
+      "email": "advait.rao.1@telecare.endocrinology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Endocrinology",
+      "_id": "seed_12_1_873939"
+    },
+    {
+      "name": "Dr. Zoya Singh",
+      "email": "zoya.singh.2@telecare.endocrinology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Endocrinology",
+      "_id": "seed_12_2_873939"
+    },
+    {
+      "name": "Dr. Karthik Patel",
+      "email": "karthik.patel.3@telecare.endocrinology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Endocrinology",
+      "_id": "seed_12_3_873939"
+    },
+    {
+      "name": "Dr. Nisha Joshi",
+      "email": "nisha.joshi.4@telecare.endocrinology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Endocrinology",
+      "_id": "seed_12_4_873939"
+    },
+    {
+      "name": "Dr. Sameer Mehta",
+      "email": "sameer.mehta.5@telecare.endocrinology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Endocrinology",
+      "_id": "seed_12_5_873939"
+    },
+    {
+      "name": "Dr. Shreya Das",
+      "email": "shreya.das.6@telecare.endocrinology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Endocrinology",
+      "_id": "seed_12_6_873939"
+    },
+    {
+      "name": "Dr. Dev Malhotra",
+      "email": "dev.malhotra.7@telecare.endocrinology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Endocrinology",
+      "_id": "seed_12_7_873939"
+    },
+    {
+      "name": "Dr. Arjun Choudhury",
+      "email": "arjun.choudhury.8@telecare.endocrinology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Endocrinology",
+      "_id": "seed_12_8_873939"
+    },
+    {
+      "name": "Dr. Priya Bose",
+      "email": "priya.bose.9@telecare.endocrinology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Endocrinology",
+      "_id": "seed_12_9_873939"
+    },
+    {
+      "name": "Dr. Vikram Misra",
+      "email": "vikram.misra.10@telecare.endocrinology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Endocrinology",
+      "_id": "seed_12_10_873939"
+    },
+    {
+      "name": "Dr. Sneha Gupta",
+      "email": "sneha.gupta.11@telecare.endocrinology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Endocrinology",
+      "_id": "seed_12_11_873939"
+    },
+    {
+      "name": "Dr. Rahul Ahuja",
+      "email": "rahul.ahuja.12@telecare.endocrinology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Endocrinology",
+      "_id": "seed_12_12_873939"
+    },
+    {
+      "name": "Dr. Anjali Iyer",
+      "email": "anjali.iyer.13@telecare.endocrinology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Endocrinology",
+      "_id": "seed_12_13_873939"
+    },
+    {
+      "name": "Dr. Kabir Nair",
+      "email": "kabir.nair.14@telecare.endocrinology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Endocrinology",
+      "_id": "seed_12_14_873939"
+    },
+    {
+      "name": "Dr. Advait Singh",
+      "email": "advait.singh.0@telecare.nephrology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Nephrology",
+      "_id": "seed_13_0_873939"
+    },
+    {
+      "name": "Dr. Zoya Patel",
+      "email": "zoya.patel.1@telecare.nephrology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Nephrology",
+      "_id": "seed_13_1_873939"
+    },
+    {
+      "name": "Dr. Karthik Joshi",
+      "email": "karthik.joshi.2@telecare.nephrology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Nephrology",
+      "_id": "seed_13_2_873939"
+    },
+    {
+      "name": "Dr. Nisha Mehta",
+      "email": "nisha.mehta.3@telecare.nephrology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Nephrology",
+      "_id": "seed_13_3_873939"
+    },
+    {
+      "name": "Dr. Sameer Das",
+      "email": "sameer.das.4@telecare.nephrology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Nephrology",
+      "_id": "seed_13_4_873939"
+    },
+    {
+      "name": "Dr. Shreya Malhotra",
+      "email": "shreya.malhotra.5@telecare.nephrology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Nephrology",
+      "_id": "seed_13_5_873939"
+    },
+    {
+      "name": "Dr. Dev Choudhury",
+      "email": "dev.choudhury.6@telecare.nephrology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Nephrology",
+      "_id": "seed_13_6_873939"
+    },
+    {
+      "name": "Dr. Arjun Bose",
+      "email": "arjun.bose.7@telecare.nephrology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Nephrology",
+      "_id": "seed_13_7_873939"
+    },
+    {
+      "name": "Dr. Priya Misra",
+      "email": "priya.misra.8@telecare.nephrology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Nephrology",
+      "_id": "seed_13_8_873939"
+    },
+    {
+      "name": "Dr. Vikram Gupta",
+      "email": "vikram.gupta.9@telecare.nephrology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Nephrology",
+      "_id": "seed_13_9_873939"
+    },
+    {
+      "name": "Dr. Sneha Ahuja",
+      "email": "sneha.ahuja.10@telecare.nephrology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Nephrology",
+      "_id": "seed_13_10_873939"
+    },
+    {
+      "name": "Dr. Rahul Iyer",
+      "email": "rahul.iyer.11@telecare.nephrology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Nephrology",
+      "_id": "seed_13_11_873939"
+    },
+    {
+      "name": "Dr. Anjali Nair",
+      "email": "anjali.nair.12@telecare.nephrology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Nephrology",
+      "_id": "seed_13_12_873939"
+    },
+    {
+      "name": "Dr. Kabir Kulkarni",
+      "email": "kabir.kulkarni.13@telecare.nephrology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Nephrology",
+      "_id": "seed_13_13_873939"
+    },
+    {
+      "name": "Dr. Ishaan Sharma",
+      "email": "ishaan.sharma.14@telecare.nephrology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Nephrology",
+      "_id": "seed_13_14_873939"
+    },
+    {
+      "name": "Dr. Zoya Joshi",
+      "email": "zoya.joshi.0@telecare.neurosurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurosurgery",
+      "_id": "seed_14_0_873939"
+    },
+    {
+      "name": "Dr. Karthik Mehta",
+      "email": "karthik.mehta.1@telecare.neurosurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurosurgery",
+      "_id": "seed_14_1_873939"
+    },
+    {
+      "name": "Dr. Nisha Das",
+      "email": "nisha.das.2@telecare.neurosurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurosurgery",
+      "_id": "seed_14_2_873939"
+    },
+    {
+      "name": "Dr. Sameer Malhotra",
+      "email": "sameer.malhotra.3@telecare.neurosurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurosurgery",
+      "_id": "seed_14_3_873939"
+    },
+    {
+      "name": "Dr. Shreya Choudhury",
+      "email": "shreya.choudhury.4@telecare.neurosurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurosurgery",
+      "_id": "seed_14_4_873939"
+    },
+    {
+      "name": "Dr. Dev Bose",
+      "email": "dev.bose.5@telecare.neurosurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurosurgery",
+      "_id": "seed_14_5_873939"
+    },
+    {
+      "name": "Dr. Arjun Misra",
+      "email": "arjun.misra.6@telecare.neurosurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurosurgery",
+      "_id": "seed_14_6_873939"
+    },
+    {
+      "name": "Dr. Priya Gupta",
+      "email": "priya.gupta.7@telecare.neurosurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurosurgery",
+      "_id": "seed_14_7_873939"
+    },
+    {
+      "name": "Dr. Vikram Ahuja",
+      "email": "vikram.ahuja.8@telecare.neurosurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurosurgery",
+      "_id": "seed_14_8_873939"
+    },
+    {
+      "name": "Dr. Sneha Iyer",
+      "email": "sneha.iyer.9@telecare.neurosurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurosurgery",
+      "_id": "seed_14_9_873939"
+    },
+    {
+      "name": "Dr. Rahul Nair",
+      "email": "rahul.nair.10@telecare.neurosurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurosurgery",
+      "_id": "seed_14_10_873939"
+    },
+    {
+      "name": "Dr. Anjali Kulkarni",
+      "email": "anjali.kulkarni.11@telecare.neurosurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurosurgery",
+      "_id": "seed_14_11_873939"
+    },
+    {
+      "name": "Dr. Kabir Sharma",
+      "email": "kabir.sharma.12@telecare.neurosurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurosurgery",
+      "_id": "seed_14_12_873939"
+    },
+    {
+      "name": "Dr. Ishaan Gupta",
+      "email": "ishaan.gupta.13@telecare.neurosurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurosurgery",
+      "_id": "seed_14_13_873939"
+    },
+    {
+      "name": "Dr. Diya Reddy",
+      "email": "diya.reddy.14@telecare.neurosurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Neurosurgery",
+      "_id": "seed_14_14_873939"
+    },
+    {
+      "name": "Dr. Karthik Das",
+      "email": "karthik.das.0@telecare.rheumatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Rheumatology",
+      "_id": "seed_15_0_873939"
+    },
+    {
+      "name": "Dr. Nisha Malhotra",
+      "email": "nisha.malhotra.1@telecare.rheumatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Rheumatology",
+      "_id": "seed_15_1_873939"
+    },
+    {
+      "name": "Dr. Sameer Choudhury",
+      "email": "sameer.choudhury.2@telecare.rheumatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Rheumatology",
+      "_id": "seed_15_2_873939"
+    },
+    {
+      "name": "Dr. Shreya Bose",
+      "email": "shreya.bose.3@telecare.rheumatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Rheumatology",
+      "_id": "seed_15_3_873940"
+    },
+    {
+      "name": "Dr. Dev Misra",
+      "email": "dev.misra.4@telecare.rheumatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Rheumatology",
+      "_id": "seed_15_4_873940"
+    },
+    {
+      "name": "Dr. Arjun Gupta",
+      "email": "arjun.gupta.5@telecare.rheumatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Rheumatology",
+      "_id": "seed_15_5_873940"
+    },
+    {
+      "name": "Dr. Priya Ahuja",
+      "email": "priya.ahuja.6@telecare.rheumatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Rheumatology",
+      "_id": "seed_15_6_873940"
+    },
+    {
+      "name": "Dr. Vikram Iyer",
+      "email": "vikram.iyer.7@telecare.rheumatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Rheumatology",
+      "_id": "seed_15_7_873940"
+    },
+    {
+      "name": "Dr. Sneha Nair",
+      "email": "sneha.nair.8@telecare.rheumatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Rheumatology",
+      "_id": "seed_15_8_873940"
+    },
+    {
+      "name": "Dr. Rahul Kulkarni",
+      "email": "rahul.kulkarni.9@telecare.rheumatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Rheumatology",
+      "_id": "seed_15_9_873940"
+    },
+    {
+      "name": "Dr. Anjali Sharma",
+      "email": "anjali.sharma.10@telecare.rheumatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Rheumatology",
+      "_id": "seed_15_10_873940"
+    },
+    {
+      "name": "Dr. Kabir Gupta",
+      "email": "kabir.gupta.11@telecare.rheumatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Rheumatology",
+      "_id": "seed_15_11_873940"
+    },
+    {
+      "name": "Dr. Ishaan Reddy",
+      "email": "ishaan.reddy.12@telecare.rheumatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Rheumatology",
+      "_id": "seed_15_12_873940"
+    },
+    {
+      "name": "Dr. Diya Kapoor",
+      "email": "diya.kapoor.13@telecare.rheumatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Rheumatology",
+      "_id": "seed_15_13_873940"
+    },
+    {
+      "name": "Dr. Rohan Verma",
+      "email": "rohan.verma.14@telecare.rheumatology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Rheumatology",
+      "_id": "seed_15_14_873940"
+    },
+    {
+      "name": "Dr. Nisha Choudhury",
+      "email": "nisha.choudhury.0@telecare.ophthalmology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Ophthalmology",
+      "_id": "seed_16_0_873940"
+    },
+    {
+      "name": "Dr. Sameer Bose",
+      "email": "sameer.bose.1@telecare.ophthalmology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Ophthalmology",
+      "_id": "seed_16_1_873940"
+    },
+    {
+      "name": "Dr. Shreya Misra",
+      "email": "shreya.misra.2@telecare.ophthalmology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Ophthalmology",
+      "_id": "seed_16_2_873940"
+    },
+    {
+      "name": "Dr. Dev Gupta",
+      "email": "dev.gupta.3@telecare.ophthalmology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Ophthalmology",
+      "_id": "seed_16_3_873940"
+    },
+    {
+      "name": "Dr. Arjun Ahuja",
+      "email": "arjun.ahuja.4@telecare.ophthalmology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Ophthalmology",
+      "_id": "seed_16_4_873940"
+    },
+    {
+      "name": "Dr. Priya Iyer",
+      "email": "priya.iyer.5@telecare.ophthalmology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Ophthalmology",
+      "_id": "seed_16_5_873940"
+    },
+    {
+      "name": "Dr. Vikram Nair",
+      "email": "vikram.nair.6@telecare.ophthalmology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Ophthalmology",
+      "_id": "seed_16_6_873940"
+    },
+    {
+      "name": "Dr. Sneha Kulkarni",
+      "email": "sneha.kulkarni.7@telecare.ophthalmology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Ophthalmology",
+      "_id": "seed_16_7_873940"
+    },
+    {
+      "name": "Dr. Rahul Sharma",
+      "email": "rahul.sharma.8@telecare.ophthalmology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Ophthalmology",
+      "_id": "seed_16_8_873940"
+    },
+    {
+      "name": "Dr. Anjali Gupta",
+      "email": "anjali.gupta.9@telecare.ophthalmology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Ophthalmology",
+      "_id": "seed_16_9_873940"
+    },
+    {
+      "name": "Dr. Kabir Reddy",
+      "email": "kabir.reddy.10@telecare.ophthalmology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Ophthalmology",
+      "_id": "seed_16_10_873940"
+    },
+    {
+      "name": "Dr. Ishaan Kapoor",
+      "email": "ishaan.kapoor.11@telecare.ophthalmology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Ophthalmology",
+      "_id": "seed_16_11_873940"
+    },
+    {
+      "name": "Dr. Diya Verma",
+      "email": "diya.verma.12@telecare.ophthalmology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Ophthalmology",
+      "_id": "seed_16_12_873940"
+    },
+    {
+      "name": "Dr. Rohan Rao",
+      "email": "rohan.rao.13@telecare.ophthalmology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Ophthalmology",
+      "_id": "seed_16_13_873940"
+    },
+    {
+      "name": "Dr. Meera Singh",
+      "email": "meera.singh.14@telecare.ophthalmology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Ophthalmology",
+      "_id": "seed_16_14_873940"
+    },
+    {
+      "name": "Dr. Sameer Misra",
+      "email": "sameer.misra.0@telecare.surgicalgastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Surgical Gastroenterology",
+      "_id": "seed_17_0_873940"
+    },
+    {
+      "name": "Dr. Shreya Gupta",
+      "email": "shreya.gupta.1@telecare.surgicalgastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Surgical Gastroenterology",
+      "_id": "seed_17_1_873940"
+    },
+    {
+      "name": "Dr. Dev Ahuja",
+      "email": "dev.ahuja.2@telecare.surgicalgastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Surgical Gastroenterology",
+      "_id": "seed_17_2_873940"
+    },
+    {
+      "name": "Dr. Arjun Iyer",
+      "email": "arjun.iyer.3@telecare.surgicalgastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Surgical Gastroenterology",
+      "_id": "seed_17_3_873940"
+    },
+    {
+      "name": "Dr. Priya Nair",
+      "email": "priya.nair.4@telecare.surgicalgastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Surgical Gastroenterology",
+      "_id": "seed_17_4_873940"
+    },
+    {
+      "name": "Dr. Vikram Kulkarni",
+      "email": "vikram.kulkarni.5@telecare.surgicalgastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Surgical Gastroenterology",
+      "_id": "seed_17_5_873940"
+    },
+    {
+      "name": "Dr. Sneha Sharma",
+      "email": "sneha.sharma.6@telecare.surgicalgastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Surgical Gastroenterology",
+      "_id": "seed_17_6_873940"
+    },
+    {
+      "name": "Dr. Rahul Gupta",
+      "email": "rahul.gupta.7@telecare.surgicalgastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Surgical Gastroenterology",
+      "_id": "seed_17_7_873940"
+    },
+    {
+      "name": "Dr. Anjali Reddy",
+      "email": "anjali.reddy.8@telecare.surgicalgastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Surgical Gastroenterology",
+      "_id": "seed_17_8_873940"
+    },
+    {
+      "name": "Dr. Kabir Kapoor",
+      "email": "kabir.kapoor.9@telecare.surgicalgastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Surgical Gastroenterology",
+      "_id": "seed_17_9_873940"
+    },
+    {
+      "name": "Dr. Ishaan Verma",
+      "email": "ishaan.verma.10@telecare.surgicalgastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Surgical Gastroenterology",
+      "_id": "seed_17_10_873940"
+    },
+    {
+      "name": "Dr. Diya Rao",
+      "email": "diya.rao.11@telecare.surgicalgastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Surgical Gastroenterology",
+      "_id": "seed_17_11_873940"
+    },
+    {
+      "name": "Dr. Rohan Singh",
+      "email": "rohan.singh.12@telecare.surgicalgastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Surgical Gastroenterology",
+      "_id": "seed_17_12_873940"
+    },
+    {
+      "name": "Dr. Meera Patel",
+      "email": "meera.patel.13@telecare.surgicalgastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Surgical Gastroenterology",
+      "_id": "seed_17_13_873940"
+    },
+    {
+      "name": "Dr. Aryan Joshi",
+      "email": "aryan.joshi.14@telecare.surgicalgastroenterology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Surgical Gastroenterology",
+      "_id": "seed_17_14_873940"
+    },
+    {
+      "name": "Dr. Shreya Ahuja",
+      "email": "shreya.ahuja.0@telecare.infectiousdisease.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Infectious Disease",
+      "_id": "seed_18_0_873940"
+    },
+    {
+      "name": "Dr. Dev Iyer",
+      "email": "dev.iyer.1@telecare.infectiousdisease.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Infectious Disease",
+      "_id": "seed_18_1_873940"
+    },
+    {
+      "name": "Dr. Arjun Nair",
+      "email": "arjun.nair.2@telecare.infectiousdisease.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Infectious Disease",
+      "_id": "seed_18_2_873940"
+    },
+    {
+      "name": "Dr. Priya Kulkarni",
+      "email": "priya.kulkarni.3@telecare.infectiousdisease.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Infectious Disease",
+      "_id": "seed_18_3_873940"
+    },
+    {
+      "name": "Dr. Vikram Sharma",
+      "email": "vikram.sharma.4@telecare.infectiousdisease.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Infectious Disease",
+      "_id": "seed_18_4_873940"
+    },
+    {
+      "name": "Dr. Sneha Gupta",
+      "email": "sneha.gupta.5@telecare.infectiousdisease.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Infectious Disease",
+      "_id": "seed_18_5_873940"
+    },
+    {
+      "name": "Dr. Rahul Reddy",
+      "email": "rahul.reddy.6@telecare.infectiousdisease.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Infectious Disease",
+      "_id": "seed_18_6_873940"
+    },
+    {
+      "name": "Dr. Anjali Kapoor",
+      "email": "anjali.kapoor.7@telecare.infectiousdisease.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Infectious Disease",
+      "_id": "seed_18_7_873940"
+    },
+    {
+      "name": "Dr. Kabir Verma",
+      "email": "kabir.verma.8@telecare.infectiousdisease.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Infectious Disease",
+      "_id": "seed_18_8_873940"
+    },
+    {
+      "name": "Dr. Ishaan Rao",
+      "email": "ishaan.rao.9@telecare.infectiousdisease.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Infectious Disease",
+      "_id": "seed_18_9_873940"
+    },
+    {
+      "name": "Dr. Diya Singh",
+      "email": "diya.singh.10@telecare.infectiousdisease.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Infectious Disease",
+      "_id": "seed_18_10_873940"
+    },
+    {
+      "name": "Dr. Rohan Patel",
+      "email": "rohan.patel.11@telecare.infectiousdisease.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Infectious Disease",
+      "_id": "seed_18_11_873940"
+    },
+    {
+      "name": "Dr. Meera Joshi",
+      "email": "meera.joshi.12@telecare.infectiousdisease.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Infectious Disease",
+      "_id": "seed_18_12_873940"
+    },
+    {
+      "name": "Dr. Aryan Mehta",
+      "email": "aryan.mehta.13@telecare.infectiousdisease.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Infectious Disease",
+      "_id": "seed_18_13_873940"
+    },
+    {
+      "name": "Dr. Saanvi Das",
+      "email": "saanvi.das.14@telecare.infectiousdisease.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Infectious Disease",
+      "_id": "seed_18_14_873940"
+    },
+    {
+      "name": "Dr. Dev Nair",
+      "email": "dev.nair.0@telecare.generallaparoscopicsurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General & Laparoscopic Surgery",
+      "_id": "seed_19_0_873940"
+    },
+    {
+      "name": "Dr. Arjun Kulkarni",
+      "email": "arjun.kulkarni.1@telecare.generallaparoscopicsurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General & Laparoscopic Surgery",
+      "_id": "seed_19_1_873940"
+    },
+    {
+      "name": "Dr. Priya Sharma",
+      "email": "priya.sharma.2@telecare.generallaparoscopicsurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General & Laparoscopic Surgery",
+      "_id": "seed_19_2_873940"
+    },
+    {
+      "name": "Dr. Vikram Gupta",
+      "email": "vikram.gupta.3@telecare.generallaparoscopicsurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General & Laparoscopic Surgery",
+      "_id": "seed_19_3_873940"
+    },
+    {
+      "name": "Dr. Sneha Reddy",
+      "email": "sneha.reddy.4@telecare.generallaparoscopicsurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General & Laparoscopic Surgery",
+      "_id": "seed_19_4_873940"
+    },
+    {
+      "name": "Dr. Rahul Kapoor",
+      "email": "rahul.kapoor.5@telecare.generallaparoscopicsurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General & Laparoscopic Surgery",
+      "_id": "seed_19_5_873940"
+    },
+    {
+      "name": "Dr. Anjali Verma",
+      "email": "anjali.verma.6@telecare.generallaparoscopicsurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General & Laparoscopic Surgery",
+      "_id": "seed_19_6_873940"
+    },
+    {
+      "name": "Dr. Kabir Rao",
+      "email": "kabir.rao.7@telecare.generallaparoscopicsurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General & Laparoscopic Surgery",
+      "_id": "seed_19_7_873940"
+    },
+    {
+      "name": "Dr. Ishaan Singh",
+      "email": "ishaan.singh.8@telecare.generallaparoscopicsurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General & Laparoscopic Surgery",
+      "_id": "seed_19_8_873940"
+    },
+    {
+      "name": "Dr. Diya Patel",
+      "email": "diya.patel.9@telecare.generallaparoscopicsurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General & Laparoscopic Surgery",
+      "_id": "seed_19_9_873940"
+    },
+    {
+      "name": "Dr. Rohan Joshi",
+      "email": "rohan.joshi.10@telecare.generallaparoscopicsurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General & Laparoscopic Surgery",
+      "_id": "seed_19_10_873940"
+    },
+    {
+      "name": "Dr. Meera Mehta",
+      "email": "meera.mehta.11@telecare.generallaparoscopicsurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General & Laparoscopic Surgery",
+      "_id": "seed_19_11_873940"
+    },
+    {
+      "name": "Dr. Aryan Das",
+      "email": "aryan.das.12@telecare.generallaparoscopicsurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General & Laparoscopic Surgery",
+      "_id": "seed_19_12_873940"
+    },
+    {
+      "name": "Dr. Saanvi Malhotra",
+      "email": "saanvi.malhotra.13@telecare.generallaparoscopicsurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General & Laparoscopic Surgery",
+      "_id": "seed_19_13_873940"
+    },
+    {
+      "name": "Dr. Advait Choudhury",
+      "email": "advait.choudhury.14@telecare.generallaparoscopicsurgery.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "General & Laparoscopic Surgery",
+      "_id": "seed_19_14_873940"
+    },
+    {
+      "name": "Dr. Arjun Sharma",
+      "email": "arjun.sharma.0@telecare.psychology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychology",
+      "_id": "seed_20_0_873940"
+    },
+    {
+      "name": "Dr. Priya Gupta",
+      "email": "priya.gupta.1@telecare.psychology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychology",
+      "_id": "seed_20_1_873940"
+    },
+    {
+      "name": "Dr. Vikram Reddy",
+      "email": "vikram.reddy.2@telecare.psychology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychology",
+      "_id": "seed_20_2_873940"
+    },
+    {
+      "name": "Dr. Sneha Kapoor",
+      "email": "sneha.kapoor.3@telecare.psychology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychology",
+      "_id": "seed_20_3_873940"
+    },
+    {
+      "name": "Dr. Rahul Verma",
+      "email": "rahul.verma.4@telecare.psychology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychology",
+      "_id": "seed_20_4_873940"
+    },
+    {
+      "name": "Dr. Anjali Rao",
+      "email": "anjali.rao.5@telecare.psychology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychology",
+      "_id": "seed_20_5_873940"
+    },
+    {
+      "name": "Dr. Kabir Singh",
+      "email": "kabir.singh.6@telecare.psychology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychology",
+      "_id": "seed_20_6_873940"
+    },
+    {
+      "name": "Dr. Ishaan Patel",
+      "email": "ishaan.patel.7@telecare.psychology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychology",
+      "_id": "seed_20_7_873940"
+    },
+    {
+      "name": "Dr. Diya Joshi",
+      "email": "diya.joshi.8@telecare.psychology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychology",
+      "_id": "seed_20_8_873940"
+    },
+    {
+      "name": "Dr. Rohan Mehta",
+      "email": "rohan.mehta.9@telecare.psychology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychology",
+      "_id": "seed_20_9_873940"
+    },
+    {
+      "name": "Dr. Meera Das",
+      "email": "meera.das.10@telecare.psychology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychology",
+      "_id": "seed_20_10_873940"
+    },
+    {
+      "name": "Dr. Aryan Malhotra",
+      "email": "aryan.malhotra.11@telecare.psychology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychology",
+      "_id": "seed_20_11_873940"
+    },
+    {
+      "name": "Dr. Saanvi Choudhury",
+      "email": "saanvi.choudhury.12@telecare.psychology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychology",
+      "_id": "seed_20_12_873940"
+    },
+    {
+      "name": "Dr. Advait Bose",
+      "email": "advait.bose.13@telecare.psychology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychology",
+      "_id": "seed_20_13_873940"
+    },
+    {
+      "name": "Dr. Zoya Misra",
+      "email": "zoya.misra.14@telecare.psychology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Psychology",
+      "_id": "seed_20_14_873940"
+    },
+    {
+      "name": "Dr. Priya Reddy",
+      "email": "priya.reddy.0@telecare.medicaloncology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Medical Oncology",
+      "_id": "seed_21_0_873940"
+    },
+    {
+      "name": "Dr. Vikram Kapoor",
+      "email": "vikram.kapoor.1@telecare.medicaloncology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Medical Oncology",
+      "_id": "seed_21_1_873940"
+    },
+    {
+      "name": "Dr. Sneha Verma",
+      "email": "sneha.verma.2@telecare.medicaloncology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Medical Oncology",
+      "_id": "seed_21_2_873940"
+    },
+    {
+      "name": "Dr. Rahul Rao",
+      "email": "rahul.rao.3@telecare.medicaloncology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Medical Oncology",
+      "_id": "seed_21_3_873940"
+    },
+    {
+      "name": "Dr. Anjali Singh",
+      "email": "anjali.singh.4@telecare.medicaloncology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Medical Oncology",
+      "_id": "seed_21_4_873940"
+    },
+    {
+      "name": "Dr. Kabir Patel",
+      "email": "kabir.patel.5@telecare.medicaloncology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Medical Oncology",
+      "_id": "seed_21_5_873940"
+    },
+    {
+      "name": "Dr. Ishaan Joshi",
+      "email": "ishaan.joshi.6@telecare.medicaloncology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Medical Oncology",
+      "_id": "seed_21_6_873940"
+    },
+    {
+      "name": "Dr. Diya Mehta",
+      "email": "diya.mehta.7@telecare.medicaloncology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Medical Oncology",
+      "_id": "seed_21_7_873940"
+    },
+    {
+      "name": "Dr. Rohan Das",
+      "email": "rohan.das.8@telecare.medicaloncology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Medical Oncology",
+      "_id": "seed_21_8_873940"
+    },
+    {
+      "name": "Dr. Meera Malhotra",
+      "email": "meera.malhotra.9@telecare.medicaloncology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Medical Oncology",
+      "_id": "seed_21_9_873940"
+    },
+    {
+      "name": "Dr. Aryan Choudhury",
+      "email": "aryan.choudhury.10@telecare.medicaloncology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Medical Oncology",
+      "_id": "seed_21_10_873940"
+    },
+    {
+      "name": "Dr. Saanvi Bose",
+      "email": "saanvi.bose.11@telecare.medicaloncology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Medical Oncology",
+      "_id": "seed_21_11_873940"
+    },
+    {
+      "name": "Dr. Advait Misra",
+      "email": "advait.misra.12@telecare.medicaloncology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Medical Oncology",
+      "_id": "seed_21_12_873940"
+    },
+    {
+      "name": "Dr. Zoya Gupta",
+      "email": "zoya.gupta.13@telecare.medicaloncology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Medical Oncology",
+      "_id": "seed_21_13_873940"
+    },
+    {
+      "name": "Dr. Karthik Ahuja",
+      "email": "karthik.ahuja.14@telecare.medicaloncology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Medical Oncology",
+      "_id": "seed_21_14_873940"
+    },
+    {
+      "name": "Dr. Vikram Verma",
+      "email": "vikram.verma.0@telecare.diabetology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Diabetology",
+      "_id": "seed_22_0_873940"
+    },
+    {
+      "name": "Dr. Sneha Rao",
+      "email": "sneha.rao.1@telecare.diabetology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Diabetology",
+      "_id": "seed_22_1_873940"
+    },
+    {
+      "name": "Dr. Rahul Singh",
+      "email": "rahul.singh.2@telecare.diabetology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Diabetology",
+      "_id": "seed_22_2_873940"
+    },
+    {
+      "name": "Dr. Anjali Patel",
+      "email": "anjali.patel.3@telecare.diabetology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Diabetology",
+      "_id": "seed_22_3_873940"
+    },
+    {
+      "name": "Dr. Kabir Joshi",
+      "email": "kabir.joshi.4@telecare.diabetology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Diabetology",
+      "_id": "seed_22_4_873940"
+    },
+    {
+      "name": "Dr. Ishaan Mehta",
+      "email": "ishaan.mehta.5@telecare.diabetology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Diabetology",
+      "_id": "seed_22_5_873940"
+    },
+    {
+      "name": "Dr. Diya Das",
+      "email": "diya.das.6@telecare.diabetology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Diabetology",
+      "_id": "seed_22_6_873940"
+    },
+    {
+      "name": "Dr. Rohan Malhotra",
+      "email": "rohan.malhotra.7@telecare.diabetology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Diabetology",
+      "_id": "seed_22_7_873940"
+    },
+    {
+      "name": "Dr. Meera Choudhury",
+      "email": "meera.choudhury.8@telecare.diabetology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Diabetology",
+      "_id": "seed_22_8_873940"
+    },
+    {
+      "name": "Dr. Aryan Bose",
+      "email": "aryan.bose.9@telecare.diabetology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Diabetology",
+      "_id": "seed_22_9_873940"
+    },
+    {
+      "name": "Dr. Saanvi Misra",
+      "email": "saanvi.misra.10@telecare.diabetology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Diabetology",
+      "_id": "seed_22_10_873940"
+    },
+    {
+      "name": "Dr. Advait Gupta",
+      "email": "advait.gupta.11@telecare.diabetology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Diabetology",
+      "_id": "seed_22_11_873940"
+    },
+    {
+      "name": "Dr. Zoya Ahuja",
+      "email": "zoya.ahuja.12@telecare.diabetology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Diabetology",
+      "_id": "seed_22_12_873940"
+    },
+    {
+      "name": "Dr. Karthik Iyer",
+      "email": "karthik.iyer.13@telecare.diabetology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Diabetology",
+      "_id": "seed_22_13_873940"
+    },
+    {
+      "name": "Dr. Nisha Nair",
+      "email": "nisha.nair.14@telecare.diabetology.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Diabetology",
+      "_id": "seed_22_14_873940"
+    },
+    {
+      "name": "Dr. Sneha Singh",
+      "email": "sneha.singh.0@telecare.dentist.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dentist",
+      "_id": "seed_23_0_873940"
+    },
+    {
+      "name": "Dr. Rahul Patel",
+      "email": "rahul.patel.1@telecare.dentist.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dentist",
+      "_id": "seed_23_1_873940"
+    },
+    {
+      "name": "Dr. Anjali Joshi",
+      "email": "anjali.joshi.2@telecare.dentist.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dentist",
+      "_id": "seed_23_2_873940"
+    },
+    {
+      "name": "Dr. Kabir Mehta",
+      "email": "kabir.mehta.3@telecare.dentist.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dentist",
+      "_id": "seed_23_3_873940"
+    },
+    {
+      "name": "Dr. Ishaan Das",
+      "email": "ishaan.das.4@telecare.dentist.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dentist",
+      "_id": "seed_23_4_873940"
+    },
+    {
+      "name": "Dr. Diya Malhotra",
+      "email": "diya.malhotra.5@telecare.dentist.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dentist",
+      "_id": "seed_23_5_873940"
+    },
+    {
+      "name": "Dr. Rohan Choudhury",
+      "email": "rohan.choudhury.6@telecare.dentist.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dentist",
+      "_id": "seed_23_6_873940"
+    },
+    {
+      "name": "Dr. Meera Bose",
+      "email": "meera.bose.7@telecare.dentist.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dentist",
+      "_id": "seed_23_7_873940"
+    },
+    {
+      "name": "Dr. Aryan Misra",
+      "email": "aryan.misra.8@telecare.dentist.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dentist",
+      "_id": "seed_23_8_873940"
+    },
+    {
+      "name": "Dr. Saanvi Gupta",
+      "email": "saanvi.gupta.9@telecare.dentist.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dentist",
+      "_id": "seed_23_9_873940"
+    },
+    {
+      "name": "Dr. Advait Ahuja",
+      "email": "advait.ahuja.10@telecare.dentist.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dentist",
+      "_id": "seed_23_10_873940"
+    },
+    {
+      "name": "Dr. Zoya Iyer",
+      "email": "zoya.iyer.11@telecare.dentist.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dentist",
+      "_id": "seed_23_11_873940"
+    },
+    {
+      "name": "Dr. Karthik Nair",
+      "email": "karthik.nair.12@telecare.dentist.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dentist",
+      "_id": "seed_23_12_873940"
+    },
+    {
+      "name": "Dr. Nisha Kulkarni",
+      "email": "nisha.kulkarni.13@telecare.dentist.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dentist",
+      "_id": "seed_23_13_873940"
+    },
+    {
+      "name": "Dr. Sameer Sharma",
+      "email": "sameer.sharma.14@telecare.dentist.com",
+      "password": "password123",
+      "role": "doctor",
+      "specialization": "Dentist",
+      "_id": "seed_23_14_873940"
+    }
+  ],
+  "appointments": []
+}

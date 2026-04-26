@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Doctor Dashboard</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      display: flex;
+      background: #f4f7fb;
+    }
+
+    .sidebar {
+      width: 220px;
+      height: 100vh;
+      background: #ffffff;
+      padding: 20px;
+      border-right: 1px solid #ddd;
+    }
+
+    .sidebar h2 {
+      color: #00a8c6;
+      margin-bottom: 30px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      padding: 12px;
+      margin: 10px 0;
+      cursor: pointer;
+      border-radius: 8px;
+      color: #555;
+    }
+
+    .sidebar ul li:hover {
+      background: #eaf6f9;
+      color: #00a8c6;
+    }
+
+    .main {
+      flex: 1;
+    }
+
+    .topbar {
+      background: #00a8c6;
+      padding: 15px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .profile img {
+      width: 80px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: left;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      background: #f0faff;
+    }
+
+    .card h4 {
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 22px;
+      color: #00a8c6;
+      font-weight: bold;
+    }
+
+    /* APPOINTMENTS TABLE */
+    .appointments-section {
+      margin-top: 40px;
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      text-align: left;
+    }
+
+    .appointments-section h3 {
+      margin-bottom: 20px;
+      color: #2c3e50;
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .appointments-section h3::before {
+      content: '📅';
+      font-size: 24px;
+    }
+
+    .appt-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    .appt-table th {
+      text-align: left;
+      padding: 15px;
+      background: #f8fbff;
+      color: #7f8c8d;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 2px solid #edf2f7;
+    }
+
+    .appt-table td {
+      padding: 18px 15px;
+      border-bottom: 1px solid #f1f4f8;
+      color: #34495e;
+      font-size: 15px;
+    }
+
+    .appt-table tr:hover {
+      background: #fcfdfe;
+    }
+
+    .status-pill {
+      padding: 6px 12px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .Booked { background: #fff8e1; color: #f39c12; }
+    .Approved { background: #e8f5e9; color: #27ae60; }
+    .Rejected { background: #ffebee; color: #e74c3c; }
+
+    .action-btn {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 13px;
+      transition: all 0.2s;
+    }
+
+    .btn-accept { background: #00a8c6; color: white; }
+    .btn-reject { background: #ff7675; color: white; }
+    .btn-join { background: #0984e3; color: white; }
+
+    .action-btn:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- 🔐 SECURITY CHECK -->
+<script>
+const token = localStorage.getItem("token");
+if (!token) {
+  alert("Unauthorized access ❌");
+  window.location.href = "login.html";
+}
+</script>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <h2>Health</h2>
+  <ul>
+    <li onclick="goPage('patients.html')">Patients</li>
+    <li onclick="goPage('appointments.html')">Appointments</li>
+    <li onclick="goPage('docdash.html')">🏠 Home</li>
+    <li onclick="goPage('patients.html')">👥 My Patients</li>
+    <li onclick="goPage('appointments.html')">📅 Appointments</li>
+    <li onclick="goPage('messages.html')">💬 Messages</li>
+    <li onclick="goPage('notifications.html')">🔔 Notifications</li>
+    <li onclick="goPage('settings.html')">⚙ Settings</li>
+    <li onclick="logout()">🚪 Logout</li>
+  </ul>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <h3>Doctor Dashboard</h3>
+    <input type="text" placeholder="Search">
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <!-- PROFILE -->
+    <div class="profile">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg">
+
+      <!-- ✅ UPDATED WELCOME -->
+      <h3 id="welcome"></h3>
+
+      <p>Welcome to your dashboard</p>
+    </div>
+
+    <!-- CARDS -->
+    <div class="cards">
+
+      <div class="card" onclick="goPage('patients.html')">
+        <h4>My Patients</h4>
+        <p id="count-patients">0</p>
+      </div>
+
+      <div class="card" onclick="goPage('appointments.html')">
+        <h4>Appointments Today</h4>
+        <p id="count-today">0</p>
+      </div>
+
+      <div class="card" onclick="goPage('messages.html')">
+        <h4>Unread Messages</h4>
+        <p>7</p>
+      </div>
+
+      <div class="card" onclick="goPage('notifications.html')">
+        <h4>Notifications</h4>
+        <p>2</p>
+      </div>
+
+      <div class="card" onclick="goPage('appointments.html')">
+        <h4>Pending Appointments</h4>
+        <p id="count-pending">0</p>
+      </div>
+
+      <div class="card" onclick="goPage('settings.html')">
+        <h4>Settings</h4>
+        <p>Manage</p>
+        
+      </div>
+
+    </div>
+
+    <!-- APPOINTMENTS LIST -->
+    <div class="appointments-section">
+      <h3>Today's Schedule</h3>
+      <table class="appt-table">
+        <thead>
+          <tr>
+            <th>Patient</th>
+            <th>Time</th>
+            <th>Problem</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="appointments-body">
+          <!-- Rows will be injected here -->
+        </tbody>
+      </table>
+      <div id="no-appts" style="display:none; padding: 40px; color: #95a5a6; font-size: 16px;">
+        ✨ No appointments scheduled for today. Enjoy your break!
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- SCRIPT -->
+<script>
+function goPage(page) {
+  window.location.href = page;
+}
+
+// ✅ DYNAMIC DOCTOR NAME
+document.getElementById("welcome").innerText =
+  "Welcome Dr. " + (localStorage.getItem("name") || localStorage.getItem("email"));
+
+function logout(){
+  localStorage.clear();
+  window.location="login.html";
+}
+
+// ✅ DYNAMIC STATS FETCHING
+async function loadStats() {
+  const email = localStorage.getItem("email");
+  const token = localStorage.getItem("token");
+  if (!email || !token) return;
+
+  try {
+    const baseUrl = "http://localhost:5000";
+    const res = await fetch(baseUrl + `/appointments?email=${email}&role=doctor`, {
+      headers: { Authorization: "Bearer " + token }
+    });
+    
+    if(!res.ok) return;
+    const appointments = await res.json();
+
+    // 1. Update Counts
+    const uniquePatients = new Set(appointments.map(a => a.patientEmail));
+    document.getElementById("count-patients").innerText = uniquePatients.size;
+
+    const todayStr = new Date().toISOString().split('T')[0];
+    const todayApps = appointments.filter(a => a.date === todayStr);
+    document.getElementById("count-today").innerText = todayApps.length;
+
+    const pendingApps = appointments.filter(a => a.status === 'Booked');
+    document.getElementById("count-pending").innerText = pendingApps.length;
+
+    // 2. Populate Today's Schedule Table
+    const tableBody = document.getElementById("appointments-body");
+    const noAppts = document.getElementById("no-appts");
+    tableBody.innerHTML = "";
+
+    if (todayApps.length === 0) {
+      noAppts.style.display = "block";
+      document.querySelector(".appt-table").style.display = "none";
+    } else {
+      noAppts.style.display = "none";
+      document.querySelector(".appt-table").style.display = "table";
+      
+      todayApps.forEach(app => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td><strong>${app.patientEmail}</strong></td>
+          <td>${app.time}</td>
+          <td>${app.problem || 'N/A'}</td>
+          <td><span class="status-pill ${app.status}">${app.status}</span></td>
+          <td>
+            ${app.status === 'Booked' ? `
+              <button class="action-btn btn-accept" onclick="updateStatus('${app._id}', 'Approved')">Accept</button>
+              <button class="action-btn btn-reject" onclick="updateStatus('${app._id}', 'Rejected')">Reject</button>
+            ` : app.status === 'Approved' ? `
+              <button class="action-btn btn-join" onclick="joinCall('${app.patientEmail}')">Join Call</button>
+            ` : '-'}
+          </td>
+        `;
+        tableBody.appendChild(tr);
+      });
+    }
+
+  } catch (error) {
+    console.error("Could not load stats:", error);
+  }
+}
+
+async function updateStatus(id, status) {
+  const token = localStorage.getItem("token");
+  try {
+    const res = await fetch(`http://localhost:5000/appointment/${id}`, {
+      method: "PUT",
+      headers: { 
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + token 
+      },
+      body: JSON.stringify({ status })
+    });
+    if (res.ok) {
+      loadStats(); // Refresh
+    }
+  } catch (err) {
+    alert("Update failed");
+  }
+}
+
+function joinCall(patientEmail) {
+  localStorage.setItem("targetPatientEmail", patientEmail);
+  localStorage.setItem("doctorName", localStorage.getItem("name") || "Doctor");
+  window.location.href = "consult.html";
+}
+
+// Automatically load stats when the page opens
+loadStats();
+</script>
+
+</body>
+</html>

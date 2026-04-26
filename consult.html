@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultation Room</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #00a8c6;
+      --secondary: #0072ff;
+      --bg: #f8fafc;
+      --glass: #ffffff;
+      --text-dark: #1e293b;
+      --text-muted: #64748b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: var(--text-dark);
+      padding: 40px 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      background: var(--glass);
+      padding: 40px;
+      border-radius: 24px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+      border: 1px solid #e2e8f0;
+      text-align: center;
+    }
+
+    .header-section {
+      margin-bottom: 30px;
+    }
+
+    .header-section h2 {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--secondary);
+      margin-bottom: 8px;
+    }
+
+    .status-msg {
+      color: var(--text-muted);
+      font-size: 15px;
+      margin-bottom: 30px;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      padding: 14px 28px;
+      font-size: 14px;
+      font-weight: 700;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      color: white;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-width: 200px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      filter: brightness(1.05);
+    }
+
+    .btn-call {
+      background: linear-gradient(135deg, #10b981, #059669);
+    }
+
+    .btn-chat {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+    }
+
+    .btn-back {
+      background: #f1f5f9;
+      color: var(--text-muted);
+      border: 1px solid #e2e8f0;
+      box-shadow: none;
+    }
+    
+    .btn-back:hover {
+      background: #e2e8f0;
+      color: var(--text-dark);
+    }
+
+    #meet-container {
+      width: 100%;
+      height: 600px;
+      border-radius: 20px;
+      overflow: hidden;
+      display: none;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+      border: 1px solid #e2e8f0;
+      margin-top: 20px;
+    }
+  </style>
+  <script src='https://meet.jit.si/external_api.js'></script>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header-section">
+      <h2 id="doc">Consultation Room</h2>
+      <p class="status-msg">Your meeting space is ready. Please choose a method to begin.</p>
+    </div>
+    
+    <div class="actions">
+      <button class="btn-call" onclick="callDoctor()">🎥 Start Video Call</button>
+      <button class="btn-chat" onclick="location='chat.html'">💬 AI Medical Assistant</button>
+      <button class="btn-back" onclick="goBack()">Back to Dashboard</button>
+    </div>
+
+    <div id="meet-container"></div>
+  </div>
+
+  <script>
+    // Security check
+    const role = localStorage.getItem("role");
+    if (!localStorage.getItem("token")) {
+      window.location.href = "login.html";
+    }
+
+    // Display Doctor Name
+    const doctorName = localStorage.getItem("doctorName") || "Doctor";
+    document.getElementById("doc").innerText = "Consulting Dr. " + doctorName;
+
+    // Call Integration using Jitsi Meet
+    function callDoctor() {
+      const meetContainer = document.getElementById("meet-container");
+      meetContainer.style.display = "block";
+      meetContainer.innerHTML = ""; // Clear existing frame if any
+      
+      const userName = localStorage.getItem("name") || localStorage.getItem("email") || "User";
+      
+      let patientIdentifier = "";
+      if (role === "doctor") {
+        patientIdentifier = localStorage.getItem("targetPatientEmail") || "UnknownPatient";
+      } else {
+        patientIdentifier = localStorage.getItem("email") || "UnknownPatient";
+      }
+
+      // Generate a room name that will be consistently unique for this consultation session
+      const roomName = "TeleCare_Consultation_" + doctorName.replace(/[^a-zA-Z0-9]/g, "_") + "_" + patientIdentifier.replace(/[^a-zA-Z0-9]/g, "_");
+
+      const options = {
+        roomName: roomName,
+        parentNode: meetContainer,
+        width: '100%',
+        height: '100%',
+        userInfo: {
+          displayName: userName
+        },
+        configOverwrite: {
+          startWithAudioMuted: false,
+          startWithVideoMuted: false
+        },
+        interfaceConfigOverwrite: {
+          SHOW_JITSI_WATERMARK: false,
+          SHOW_WATERMARK_FOR_GUESTS: false,
+          TOOLBAR_BUTTONS: [
+            'microphone', 'camera', 'closedcaptions', 'desktop', 'fullscreen',
+            'fodeviceselection', 'profile', 'chat', 'recording',
+            'livestreaming', 'etherpad', 'sharedvideo', 'settings', 'raisehand',
+            'videoquality', 'filmstrip', 'invite', 'feedback', 'stats', 'shortcuts',
+            'tileview', 'videobackgroundblur', 'download', 'help', 'mute-everyone', 'hangup'
+          ]
+        }
+      };
+
+      const api = new JitsiMeetExternalAPI("meet.jit.si", options);
+    }
+    
+    function goBack() {
+      if (role === "doctor") {
+         window.location.href = "appointments.html";
+      } else {
+         window.location.href = "myappointments.html";
+      }
+    }
+  </script>
+</body>
+</html>

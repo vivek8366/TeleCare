@@ -1,0 +1,7 @@
+MONGO_URI=mongodb://Sudhakar:1234@ac-ovi7lun-shard-00-00.ykttjqi.mongodb.net:27017,ac-ovi7lun-shard-00-01.ykttjqi.mongodb.net:27017,ac-ovi7lun-shard-00-02.ykttjqi.mongodb.net:27017/telemedicine?ssl=true&authSource=admin&retryWrites=true&w=majority
+JWT_SECRET=secret
+EMAIL_USER=mjucjg2cfbgdzdxx@ethereal.email
+EMAIL_PASS=MA9HbjhxrsXEZtdUe3
+EMAIL_HOST=smtp.ethereal.email
+EMAIL_PORT=587
+EMAIL_SECURE=false

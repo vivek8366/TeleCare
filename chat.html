@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AI Doctor Chat</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f7fb;
+      padding: 20px;
+    }
+
+    #chatBox {
+      height: 400px;
+      overflow-y: auto;
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+    }
+
+    input {
+      width: 70%;
+      padding: 10px;
+    }
+
+    button {
+      padding: 10px;
+      background: #00a8c6;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .user {
+      color: blue;
+    }
+
+    .bot {
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>AI Doctor Consultation 👨‍⚕️</h2>
+
+  <div id="chatBox"></div>
+
+  <input id="msg" placeholder="Describe your symptoms...">
+  <button onclick="send()">Send</button>
+
+  <script>
+    async function send() {
+      const msgInput = document.getElementById("msg");
+      const msg = msgInput.value.trim();
+      const box = document.getElementById("chatBox");
+
+      if (!msg) return;
+
+      box.innerHTML += `<p class="user">You: ${msg}</p>`;
+      box.innerHTML += `<p class="bot">AI Doctor: Typing...</p>`;
+      box.scrollTop = box.scrollHeight;
+
+      try {
+        const baseUrl = "http://localhost:5000";
+        const res = await fetch(baseUrl + "/ai-chat", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": "Bearer " + localStorage.getItem("token")
+          },
+          body: JSON.stringify({ message: msg })
+        });
+
+        const data = await res.json();
+
+        let chats = document.querySelectorAll(".bot");
+        chats[chats.length - 1].innerHTML =
+          "AI Doctor: " + data.reply;
+
+      } catch (err) {
+        box.innerHTML += `<p class="bot">AI Doctor: Connection error ❌</p>`;
+      }
+
+      msgInput.value = "";
+    }
+
+    if (!localStorage.getItem("token")) location = "login.html";
+
+  </script>
+
+</body>
+
+</html>

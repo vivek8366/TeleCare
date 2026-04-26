@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeleCare | Patient Management</title>
+  <style>
+    :root {
+      --primary: #00a8c6;
+      --secondary: #0072ff;
+      --bg: #f8fbff;
+      --text: #2c3e50;
+    }
+
+    * {
+      border: none;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .header h2 {
+      font-size: 28px;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .btn-back {
+      background: #e1f5fe;
+      color: var(--primary);
+      padding: 10px 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+
+    .btn-back:hover {
+      background: var(--primary);
+      color: white;
+    }
+
+    /* SEARCH */
+    .search-container {
+      margin-bottom: 30px;
+      background: white;
+      padding: 15px 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .search-container input {
+      width: 100%;
+      outline: none;
+      font-size: 16px;
+    }
+
+    /* TABLE */
+    .table-card {
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.04);
+      overflow: hidden;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 15px;
+    }
+
+    th {
+      text-align: left;
+      padding: 0 20px;
+      color: #95a5a6;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    tbody tr {
+      background: #fbfcfe;
+      transition: 0.3s;
+    }
+
+    tbody tr:hover {
+      background: #f0faff;
+      transform: scale(1.01);
+    }
+
+    td {
+      padding: 15px 20px;
+    }
+
+    td:first-child { border-radius: 15px 0 0 15px; }
+    td:last-child { border-radius: 0 15px 15px 0; }
+
+    .patient-email {
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    .problem-tag {
+      background: white;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 13px;
+      border: 1px solid #eee;
+    }
+
+    .btn-call {
+      background: var(--primary);
+      color: white;
+      padding: 8px 15px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 13px;
+      transition: 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-call:hover {
+      background: var(--secondary);
+      box-shadow: 0 5px 15px rgba(0, 114, 255, 0.2);
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 60px;
+      color: #95a5a6;
+    }
+
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+  
+  <div class="header">
+    <h2>My Patients</h2>
+    <a href="docdash.html" class="btn-back">⬅ Back to Dashboard</a>
+  </div>
+
+  <div class="search-container">
+    <span>🔍</span>
+    <input type="text" id="search" placeholder="Search by email or problem..." onkeyup="filterTable()">
+  </div>
+
+  <div class="table-card">
+    <table id="patientTable">
+      <thead>
+        <tr>
+          <th>Patient</th>
+          <th>Condition</th>
+          <th>Last Appointment</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <tr><td colspan="4" class="empty-state">Loading your patient list...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<script>
+// Auth check
+if (!localStorage.getItem("token")) window.location.href = "login.html";
+
+async function loadPatients() {
+  const container = document.getElementById("table-body");
+  try {
+    const baseUrl = "http://localhost:5000";
+    const res = await fetch(baseUrl + `/patients`, {
+      headers: { Authorization: "Bearer " + localStorage.getItem("token") }
+    });
+    const patients = await res.json();
+
+    container.innerHTML = "";
+
+    if (patients.length === 0) {
+      container.innerHTML = `<tr><td colspan="4" class="empty-state">No patients found in your records.</td></tr>`;
+      return;
+    }
+
+    // Grouping by patientEmail to show unique patients
+    const uniquePatients = {};
+    patients.forEach(p => {
+      if(!uniquePatients[p.patientEmail] || new Date(p.date) > new Date(uniquePatients[p.patientEmail].date)) {
+        uniquePatients[p.patientEmail] = p;
+      }
+    });
+
+    Object.values(uniquePatients).forEach(p => {
+      container.innerHTML += `
+        <tr>
+          <td class="patient-email">${p.patientEmail}</td>
+          <td><span class="problem-tag">${p.problem}</span></td>
+          <td style="color: #7f8c8d;">${p.date}</td>
+          <td>
+            <button class="btn-call" onclick="joinCall('${p.patientEmail}')">
+              📞 Start Consult
+            </button>
+          </td>
+        </tr>
+      `;
+    });
+
+  } catch (err) {
+    container.innerHTML = `<tr><td colspan="4" class="empty-state">Error loading records ❌</td></tr>`;
+  }
+}
+
+function filterTable() {
+  const input = document.getElementById("search").value.toLowerCase();
+  const rows = document.getElementById("table-body").getElementsByTagName("tr");
+  
+  for (let row of rows) {
+    const text = row.innerText.toLowerCase();
+    row.style.display = text.includes(input) ? "" : "none";
+  }
+}
+
+function joinCall(patientEmail) {
+  localStorage.setItem("targetPatientEmail", patientEmail);
+  localStorage.setItem("doctorName", localStorage.getItem("name") || "Doctor");
+  window.location.href = "consult.html";
+}
+
+loadPatients();
+</script>
+
+</body>
+</html>
