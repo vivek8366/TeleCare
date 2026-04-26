@@ -236,7 +236,7 @@ async function init() {
   const currentSpec = localStorage.getItem("specialization") || "General Physician";
   
   try {
-    const res = await fetch("http://localhost:5000/doctors");
+    const res = await fetch(window.location.origin + "/doctors");
     allDoctors = await res.json();
     displayDoctors(currentSpec);
   } catch (err) {

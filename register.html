@@ -167,7 +167,7 @@ function register(){
     return;
   }
 
-  const baseUrl = "http://localhost:5000";
+  const baseUrl = window.location.origin;
   fetch(baseUrl + "/register",{
     method:"POST",
     headers:{"Content-Type":"application/json"},

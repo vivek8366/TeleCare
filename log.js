@@ -17,7 +17,7 @@ function login() {
   loader.style.display = "block";
 
   // Connect directly to the backend running node server.js
-  const baseUrl = "http://localhost:5000";
+  const baseUrl = window.location.origin;
 
   fetch(baseUrl + "/login", {
     method: "POST",
@@ -47,7 +47,7 @@ function login() {
     })
     .catch(err => {
       console.error("Login Error:", err);
-      alert("Could not connect to the server. Please check if the backend is running on port 5000 and the database is accessible. ❌");
+      alert("Could not connect to the server. Please check the backend server and network connectivity. ❌");
       // Reset button
       btn.disabled = false;
       btnText.style.display = "block";

@@ -141,7 +141,7 @@ if (!localStorage.getItem("token")) {
 
 const email = localStorage.getItem("email");
 
-const baseUrl = "http://localhost:5000";
+const baseUrl = window.location.origin;
 fetch(baseUrl + `/appointments?email=${email}&role=doctor`, {
   headers: {
     Authorization: "Bearer " + localStorage.getItem("token")
@@ -192,7 +192,7 @@ fetch(baseUrl + `/appointments?email=${email}&role=doctor`, {
 
 // UPDATE STATUS
 function update(id, status) {
-  const baseUrl = "http://localhost:5000";
+  const baseUrl = window.location.origin;
   fetch(baseUrl + `/appointment/${id}`, {
     method: "PUT",
     headers: {

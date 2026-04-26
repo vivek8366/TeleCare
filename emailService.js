@@ -13,6 +13,7 @@ async function sendWelcomeEmail(to, name) {
   });
 
   const isTestAccount = (process.env.EMAIL_HOST || "").includes("ethereal");
+  const BASE_URL = process.env.BASE_URL || `http://localhost:${process.env.PORT || 5000}`;
 
   const mailOptions = {
     from: `"Telemedicine" <${process.env.EMAIL_USER}>`,
@@ -39,7 +40,7 @@ async function sendWelcomeEmail(to, name) {
           </div>
 
           <div style="text-align: center; margin: 40px 0;">
-            <a href="http://localhost:5000/login.html" style="background: linear-gradient(135deg, #00a8c6 0%, #0072ff 100%); color: white; padding: 18px 35px; text-decoration: none; border-radius: 12px; font-weight: 700; font-size: 16px; box-shadow: 0 10px 20px rgba(0, 168, 198, 0.2);">Enter Your Dashboard</a>
+            <a href="${BASE_URL}/login.html" style="background: linear-gradient(135deg, #00a8c6 0%, #0072ff 100%); color: white; padding: 18px 35px; text-decoration: none; border-radius: 12px; font-weight: 700; font-size: 16px; box-shadow: 0 10px 20px rgba(0, 168, 198, 0.2);">Enter Your Dashboard</a>
           </div>
         </div>
         
@@ -75,6 +76,7 @@ async function sendAppointmentEmail(to, name, doctorName, date, time) {
   });
 
   const isTestAccount = (process.env.EMAIL_HOST || "").includes("ethereal");
+  const BASE_URL = process.env.BASE_URL || `http://localhost:${process.env.PORT || 5000}`;
 
   const mailOptions = {
     from: `"Telemedicine" <${process.env.EMAIL_USER}>`,

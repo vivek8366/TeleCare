@@ -320,7 +320,7 @@ async function loadStats() {
   if (!email || !token) return;
 
   try {
-    const baseUrl = "http://localhost:5000";
+    const baseUrl = window.location.origin;
     const res = await fetch(baseUrl + `/appointments?email=${email}&role=doctor`, {
       headers: { Authorization: "Bearer " + token }
     });
@@ -379,7 +379,7 @@ async function loadStats() {
 async function updateStatus(id, status) {
   const token = localStorage.getItem("token");
   try {
-    const res = await fetch(`http://localhost:5000/appointment/${id}`, {
+    const res = await fetch(`${window.location.origin}/appointment/${id}`, {
       method: "PUT",
       headers: { 
         "Content-Type": "application/json",

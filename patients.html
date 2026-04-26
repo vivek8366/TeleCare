@@ -202,7 +202,7 @@ if (!localStorage.getItem("token")) window.location.href = "login.html";
 async function loadPatients() {
   const container = document.getElementById("table-body");
   try {
-    const baseUrl = "http://localhost:5000";
+    const baseUrl = window.location.origin;
     const res = await fetch(baseUrl + `/patients`, {
       headers: { Authorization: "Bearer " + localStorage.getItem("token") }
     });

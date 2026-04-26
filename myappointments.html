@@ -216,7 +216,7 @@
 if(!localStorage.getItem("token")) location="login.html";
 
 async function loadAppointments() {
-  const baseUrl = "http://localhost:5000";
+  const baseUrl = window.location.origin;
   const email = localStorage.getItem("email");
   const token = localStorage.getItem("token");
 

@@ -233,7 +233,7 @@ const today = new Date().toISOString().split('T')[0];
 document.getElementById("date").value = today;
 
 async function book(){
-  const baseUrl = "http://localhost:5000";
+  const baseUrl = window.location.origin;
   const doctorEmail = document.getElementById("doctorEmail").value;
   const doctorName = document.getElementById("doctorNameInput").value;
   const date = document.getElementById("date").value;
