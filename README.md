@@ -89,23 +89,6 @@ telecare/
 ├── package.json
 └── README.md
 
-🚀 Local Development Setup
-
-Prerequisites
-Node.js (v18+)
-npm
-MongoDB Atlas
-Cloudinary account
-1. Clone the repository
-git clone https://github.com/your-username/telecare.git
-cd telecare
-2. Install dependencies
-npm install
-cd server
-npm install
-3. Configure environment variables
-
-Create .env files in both client and server.
 
 🔐 Environment Variables
 Backend
