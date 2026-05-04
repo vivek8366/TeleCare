@@ -46,7 +46,9 @@ The platform follows a modern full-stack architecture with a React frontend and 
 ☁️ Cloud Media Uploads — Profile images and documents via Cloudinary
 📱 Responsive UI — Optimized for mobile, tablet, and desktop
 🧰 Tech Stack
+
 Layer	Technology
+
 Frontend	React + TypeScript
 Build Tool	Vite
 Styling	Tailwind CSS
@@ -55,6 +57,7 @@ Database	MongoDB (Mongoose)
 Authentication	JWT
 Media Storage	Cloudinary
 Deployment	Render
+
 🏗️ Architecture Overview
 
 Request Flow:
@@ -64,7 +67,9 @@ Token is sent with API requests in Authorization header
 Express middleware verifies the token
 Backend processes request and interacts with MongoDB
 Media files are handled via Cloudinary
+
 📁 Folder Structure
+
 telecare/
 ├── client/
 │   ├── src/
@@ -83,7 +88,9 @@ telecare/
 │
 ├── package.json
 └── README.md
+
 🚀 Local Development Setup
+
 Prerequisites
 Node.js (v18+)
 npm
@@ -108,12 +115,7 @@ CLOUDINARY_CLOUD_NAME=your_cloud_name
 CLOUDINARY_API_KEY=your_key
 CLOUDINARY_API_SECRET=your_secret
 PORT=3000
-▶️ Running the Project
-Start backend
-cd server
-npm run dev
-Start frontend
-npm run dev
+
 🔌 API Highlights
 Method	Endpoint	Description
 POST	/api/auth/register	Register user
@@ -122,10 +124,12 @@ GET	/api/doctors	Get all doctors
 POST	/api/appointments	Book appointment
 GET	/api/appointments	Get user appointments
 POST	/api/upload	Upload files
+
 🔒 Authentication & Authorization
 JWT-based authentication
 Protected routes require valid token
 Middleware verifies user identity before accessing resources
+
 🚢 Deployment Guide
 Frontend
 Deploy using Render / Vercel
@@ -135,14 +139,17 @@ Checklist
 Set environment variables
 Ensure MongoDB Atlas connection
 Verify API URLs
+
 🧪 Testing & Quality Checks
 npm run lint
 npm run test
+
 ⚡ Performance & Security Notes
 Optimized API calls for faster response
 Secure password hashing (bcrypt)
 JWT authentication for protected routes
 Cloudinary CDN for fast media delivery
+
 🛠️ Troubleshooting
 
 Server not starting
