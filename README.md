@@ -154,9 +154,4 @@ Ensure correct frontend URL in backend
 🧾 Prescription management system
 🤝 Contributing
 
-Contributions are welcome!
 
-git fork
-git checkout -b feature-name
-git commit -m "Add feature"
-git push
