@@ -70,6 +70,20 @@
       margin-bottom: 10px;
     }
 
+    .profile-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #00a8c6;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
     .cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -228,7 +242,7 @@ if (!token) {
 
     <!-- PROFILE -->
     <div class="profile">
-      <img src="https://randomuser.me/api/portraits/women/44.jpg">
+      <div class="profile-avatar" id="avatar"></div>
 
       <!-- ✅ UPDATED WELCOME -->
       <h3 id="welcome"></h3>
@@ -307,6 +321,19 @@ function goPage(page) {
 // ✅ DYNAMIC DOCTOR NAME
 document.getElementById("welcome").innerText =
   "Welcome Dr. " + (localStorage.getItem("name") || localStorage.getItem("email"));
+
+const name = localStorage.getItem("name") || localStorage.getItem("email");
+
+let initials = "";
+
+if (name.includes(" ")) {
+  const parts = name.split(" ");
+  initials = parts[0][0] + parts[1][0];
+} else {
+  initials = name[0];
+}
+
+document.getElementById("avatar").innerText = initials.toUpperCase();
 
 function logout(){
   localStorage.clear();
