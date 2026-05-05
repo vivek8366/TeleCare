@@ -159,23 +159,26 @@ fetch(baseUrl + `/appointments?email=${email}&role=doctor`, {
     empty.style.display = "block";
     return;
   }
+
+  // ✅ Get existing notifications ONCE
   let notifications = JSON.parse(localStorage.getItem("notifications")) || [];
 
-data.forEach(app => {
-  const exists = notifications.some(n =>
-    n.message.includes(app._id)
-  );
+  // ✅ Add new notifications (no duplicates)
+  data.forEach(app => {
+    const exists = notifications.some(n => n.id === app._id);
 
-  if (app.status === "Booked" && !exists) {
-    notifications.unshift({
-      id: app._id,
-      message: `New appointment from ${app.patientEmail}`,
-      time: new Date().toLocaleString()
-    });
-  }
-});
+    if (app.status === "Booked" && !exists) {
+      notifications.unshift({
+        id: app._id,
+        message: `New appointment from ${app.patientEmail}`,
+        time: new Date().toLocaleString()
+      });
+    }
+  });
 
-localStorage.setItem("notifications", JSON.stringify(notifications));
+  // ✅ Save once
+  localStorage.setItem("notifications", JSON.stringify(notifications));
+
 
     data.forEach(app => {
       table.innerHTML += `
@@ -222,7 +225,7 @@ function update(id, status) {
   .then(res => res.json())
   .then(() => {
 
-    // ✅ CREATE NOTIFICATION
+    // ✅ ADD NOTIFICATION
     let notifications = JSON.parse(localStorage.getItem("notifications")) || [];
 
     notifications.unshift({
