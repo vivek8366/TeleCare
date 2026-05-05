@@ -159,6 +159,18 @@ fetch(baseUrl + `/appointments?email=${email}&role=doctor`, {
     empty.style.display = "block";
     return;
   }
+  let notifications = JSON.parse(localStorage.getItem("notifications")) || [];
+
+data.forEach(app => {
+  if (app.status === "Booked") {
+    notifications.unshift({
+      message: `New appointment from ${app.patientEmail}`,
+      time: new Date().toLocaleString()
+    });
+  }
+});
+
+localStorage.setItem("notifications", JSON.stringify(notifications));
 
     data.forEach(app => {
       table.innerHTML += `
@@ -193,6 +205,7 @@ fetch(baseUrl + `/appointments?email=${email}&role=doctor`, {
 // UPDATE STATUS
 function update(id, status) {
   const baseUrl = window.location.origin;
+
   fetch(baseUrl + `/appointment/${id}`, {
     method: "PUT",
     headers: {
@@ -203,6 +216,17 @@ function update(id, status) {
   })
   .then(res => res.json())
   .then(() => {
+
+    // ✅ CREATE NOTIFICATION
+    let notifications = JSON.parse(localStorage.getItem("notifications")) || [];
+
+    notifications.unshift({
+      message: `Appointment ${status}`,
+      time: new Date().toLocaleString()
+    });
+
+    localStorage.setItem("notifications", JSON.stringify(notifications));
+
     alert("Updated successfully ✅");
     location.reload();
   })
