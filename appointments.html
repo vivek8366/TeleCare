@@ -162,8 +162,13 @@ fetch(baseUrl + `/appointments?email=${email}&role=doctor`, {
   let notifications = JSON.parse(localStorage.getItem("notifications")) || [];
 
 data.forEach(app => {
-  if (app.status === "Booked") {
+  const exists = notifications.some(n =>
+    n.message.includes(app._id)
+  );
+
+  if (app.status === "Booked" && !exists) {
     notifications.unshift({
+      id: app._id,
       message: `New appointment from ${app.patientEmail}`,
       time: new Date().toLocaleString()
     });
