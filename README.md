@@ -65,7 +65,9 @@ Request Flow
 📁 Project Structure
 
 telecare/
+
 ├── client/
+
 │   ├── src/
 
 │   │   ├── components/
@@ -79,6 +81,7 @@ telecare/
 │   │   └── main.tsx
 
 │
+
 ├── server/
 
 │   ├── controllers/
