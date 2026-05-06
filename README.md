@@ -65,21 +65,36 @@ Request Flow
 📁 Project Structure
 
 telecare/
+
 ├── client/
+
 │   ├── src/
+
 │   │   ├── components/
+
 │   │   ├── pages/
+
 │   │   ├── hooks/
+
 │   │   ├── utils/
+
 │   │   └── main.tsx
+
 │
 ├── server/
+
 │   ├── controllers/
+
 │   ├── routes/
+
 │   ├── models/
+
 │   ├── middleware/
+
 │   └── index.js
+
 ├── package.json
+
 └── README.md
 
 ⚙️ Environment Variables
