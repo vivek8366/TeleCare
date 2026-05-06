@@ -1,12 +1,15 @@
 ﻿✦ TeleCare
+ 
 A modern, scalable telemedicine platform for remote healthcare delivery.
 Connecting patients and doctors through secure, real-time digital experiences.
 
 🔭 Overview
+
 TeleCare is a full-stack telemedicine application designed to streamline communication between patients and healthcare providers. It enables seamless appointment scheduling, real-time interaction, and secure medical data management — all within a clean, responsive interface.
 Built with a modern tech stack, TeleCare follows a scalable architecture using a React + TypeScript frontend and a Node.js + Express backend, with MongoDB for data persistence and Cloudinary for media management.
 
 ✨ Key Features
+
 • 🩺 Doctor–Patient Interaction
 Secure and structured communication between users and healthcare providers
 • 📅 Appointment Booking System
@@ -25,6 +28,7 @@ Image and document handling via Cloudinary
 Optimized across mobile, tablet, and desktop devices
 
 🧰 Tech Stack
+
 Layer
 Technology
 Frontend
@@ -45,6 +49,7 @@ Deployment
 Render
 
 🏗️ Architecture Overview
+
 Request Flow
 1. User authenticates and receives a JWT token
 2. Token is included in API requests via Authorization headers
@@ -58,6 +63,7 @@ Request Flow
 
 
 📁 Project Structure
+
 telecare/
 ├── client/
 │   ├── src/
@@ -77,6 +83,7 @@ telecare/
 └── README.md
 
 ⚙️ Environment Variables
+
 Backend
 MONGODB_URI=your_mongodb_uri
 JWT_SECRET=your_secret_key
@@ -86,6 +93,7 @@ CLOUDINARY_API_SECRET=your_secret
 PORT=3000
 
 🚀 Getting Started
+
 1. Clone the Repository
 git clone https://github.com/vivek8366/TeleCare.git
 cd TeleCare
@@ -107,6 +115,7 @@ cd ../client
 npm run dev
 
 🔌 API Highlights
+
 Method
 Endpoint
 Description
@@ -130,11 +139,13 @@ POST
 Upload media files
 
 🔒 Authentication & Authorization
+
 • JWT-based authentication
 • Protected routes require valid tokens
 • Middleware ensures secure access control
 
 🚢 Deployment
+
 Frontend
 • Deploy via Vercel or Render
 Backend
@@ -145,16 +156,19 @@ Deployment Checklist
 • Update API base URLs
 
 🧪 Testing & Quality
+
 npm run lint
 npm run test
 
 ⚡ Performance & Security
+
 • Optimized API responses for speed
 • Password hashing using bcrypt
 • Secure JWT-based authentication
 • Cloudinary CDN for fast media delivery
 
 🛠️ Troubleshooting
+
 Server not starting
 • Verify .env configuration
 MongoDB connection issues
@@ -163,6 +177,7 @@ CORS errors
 • Ensure frontend URL is allowed in backend configuration
 
 🗺️ Roadmap
+
 • 🔔 Real-time video consultation (WebRTC)
 • 📊 Health analytics dashboard
 • 📱 Mobile application
@@ -170,14 +185,17 @@ CORS errors
 • 🧾 Prescription management system
 
 🤝 Contributing
+
 Contributions are welcome!
 Please fork the repository and submit a pull request with clear documentation.
 
 📄 License
+
 This project is licensed under the MIT License.
 
 👤 Maintainer
-Vivek
+
+Vivek,Venkata Sudhakar,siddu
 GitHub: https://github.com/vivek8366
 
 TeleCare aims to make healthcare more accessible, efficient, and connected — wherever you are.
