@@ -65,9 +65,7 @@ Request Flow
 📁 Project Structure
 
 telecare/
-
 ├── client/
-
 │   ├── src/
 
 │   │   ├── components/
