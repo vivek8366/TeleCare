@@ -12,18 +12,25 @@ Built with a modern tech stack, TeleCare follows a scalable architecture using a
 
 • 🩺 Doctor–Patient Interaction
 Secure and structured communication between users and healthcare providers
+
 • 📅 Appointment Booking System
 Easy scheduling and management of consultations
+
 • 💬 Real-Time Messaging
 Direct chat for quick assistance and follow-ups
+
 • 📂 Medical Records Management
 Secure storage and retrieval of patient data
+
 • 🧑‍⚕️ Doctor Profiles
 View qualifications, specialization, and availability
+
 • 🔐 Authentication & Security
 JWT-based authentication with protected routes
+
 • ☁️ Cloud Media Uploads
 Image and document handling via Cloudinary
+
 • 📱 Responsive Design
 Optimized across mobile, tablet, and desktop devices
 
